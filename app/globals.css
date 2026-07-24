@@ -1,0 +1,180 @@
+/* ============================================================
+   PW Twin — design tokens & base
+   Concept: "the page's digital twin." Signature = the highlighter.
+   ============================================================ */
+
+:root {
+  /* Core palette */
+  --ink: #141b2e;
+  --ink-80: #2a3149;
+  --ink-60: #4a5169;
+  --ink-40: #7b8199;
+  --paper: #eef0f4;
+  --surface: #fafbfc;
+  --surface-2: #f2f4f8;
+  --line: #dde1e9;
+  --line-strong: #c7cddb;
+  --highlighter: #e9ff5a;
+  --highlighter-deep: #c9e029;
+
+  /* Subject accents (functional coding, one per page) */
+  --subject: #3d7dff;        /* default: physics; overridden per page */
+  --subject-ink: #0b2a63;
+  --subject-wash: #eaf1ff;
+
+  --physics: #3d7dff;
+  --chemistry: #12a5b8;
+  --biology: #48b961;
+  --math: #8b5cf6;
+
+  /* Feedback */
+  --ok: #2fb35a;
+  --warn: #e9a23b;
+  --danger: #e5544b;
+
+  /* Type roles (bound to next/font variables in layout) */
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-read: var(--font-newsreader), Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Shape & motion */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --shadow-card: 0 1px 2px rgba(20, 27, 46, 0.04), 0 8px 24px rgba(20, 27, 46, 0.06);
+  --shadow-float: 0 12px 40px rgba(20, 27, 46, 0.16);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --device-w: 460px;
+}
+
+/* Subject theming: set data-subject on a container to recolor --subject */
+[data-subject="Physics"]  { --subject: var(--physics);  --subject-ink: #0b2a63; --subject-wash: #eaf1ff; }
+[data-subject="Chemistry"]{ --subject: var(--chemistry);--subject-ink: #04434b; --subject-wash: #e3f7fa; }
+[data-subject="Biology"]  { --subject: var(--biology);  --subject-ink: #124a25; --subject-wash: #e7f7ec; }
+[data-subject="Math"]     { --subject: var(--math);     --subject-ink: #3a1d76; --subject-wash: #f0eafe; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-display);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100dvh;
+}
+
+h1, h2, h3, h4 { line-height: 1.1; font-weight: 600; letter-spacing: -0.02em; }
+
+button, input, textarea, select { font: inherit; color: inherit; }
+button { cursor: pointer; border: none; background: none; }
+a { color: inherit; text-decoration: none; }
+
+:focus-visible {
+  outline: 3px solid var(--subject);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---- Ambient study-desk backdrop (graph paper) ---- */
+.desk {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 26px 26px;
+  background-position: -1px -1px;
+}
+.desk::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(120% 80% at 50% -10%, rgba(61, 125, 255, 0.05), transparent 60%);
+}
+
+/* ---- Device column (phone-native, centered on desktop) ---- */
+.device {
+  position: relative;
+  width: 100%;
+  max-width: var(--device-w);
+  min-height: 100dvh;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 520px) {
+  .desk { padding: 28px 16px; align-items: flex-start; }
+  .device {
+    min-height: auto;
+    border-radius: var(--r-xl);
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+}
+
+/* ---- Small shared atoms ---- */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+}
+.mono { font-family: var(--font-mono); }
+.read { font-family: var(--font-read); }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--ink-60);
+  border: 1px solid var(--line);
+}
+
+/* Highlighter mark — the signature */
+.mark {
+  position: relative;
+  display: inline;
+  white-space: pre-wrap;
+}
+.mark::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  bottom: 1px;
+  height: 0.62em;
+  background: var(--highlighter);
+  z-index: -1;
+  transform: skewX(-3deg) scaleX(var(--swipe, 1));
+  transform-origin: left center;
+  border-radius: 2px;
+  mix-blend-mode: multiply;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
