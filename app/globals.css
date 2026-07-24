@@ -149,25 +149,18 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--line);
 }
 
-/* Highlighter mark — the signature */
+/* Highlighter mark — the signature.
+   Painted as the element's own background so it always sits behind the text
+   and above whatever surface it's on (no negative z-index tricks). */
 .mark {
-  position: relative;
-  display: inline;
-  white-space: pre-wrap;
-}
-.mark::before {
-  content: "";
-  position: absolute;
-  left: -2px;
-  right: -2px;
-  bottom: 1px;
-  height: 0.62em;
-  background: var(--highlighter);
-  z-index: -1;
-  transform: skewX(-3deg) scaleX(var(--swipe, 1));
-  transform-origin: left center;
-  border-radius: 2px;
-  mix-blend-mode: multiply;
+  background-image: linear-gradient(var(--highlighter), var(--highlighter));
+  background-repeat: no-repeat;
+  background-position: 0 82%;
+  background-size: 100% 0.58em;
+  padding: 0 2px;
+  border-radius: 3px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 @media (prefers-reduced-motion: reduce) {

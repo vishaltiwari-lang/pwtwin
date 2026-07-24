@@ -1,5 +1,5 @@
-import type { PageContent, PageSummary } from "./types.ts";
-import { PAGES } from "./data/pages.ts";
+import type { PageContent, PageSummary } from "./types";
+import { PAGES } from "./data/pages";
 
 const BY_ID = new Map<string, PageContent>(PAGES.map((p) => [p.id, p]));
 

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { getPage, getAllPages, listPageSummaries } from "./content.ts";
+import { getPage, getAllPages, listPageSummaries } from "./content";
 
 test("getAllPages returns pages with unique ids", () => {
   const pages = getAllPages();

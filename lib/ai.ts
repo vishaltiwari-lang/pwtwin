@@ -1,4 +1,4 @@
-import type { PageContent, Question } from "./types.ts";
+import type { PageContent, Question } from "./types";
 
 export type AnswerSource = "claude" | "offline";
 
@@ -188,7 +188,8 @@ export async function answerDoubt(
       messages,
     });
 
-    if (response.stop_reason === "refusal") {
+    // "refusal" exists on newer models/SDKs; compare as string for forward-compat.
+    if ((response.stop_reason as string) === "refusal") {
       return { text: groundedFallbackAnswer(page, userText).text, source: "offline" };
     }
 

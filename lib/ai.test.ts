@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildSystemPrompt, groundedFallbackAnswer } from "./ai.ts";
-import { getPage } from "./content.ts";
+import { buildSystemPrompt, groundedFallbackAnswer } from "./ai";
+import { getPage } from "./content";
 
 const page = getPage("phy-rot-207")!;
 

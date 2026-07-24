@@ -1,4 +1,4 @@
-import type { PageContent } from "../types.ts";
+import type { PageContent } from "../types";
 
 /**
  * Seeded module pages. In production these rows would come from the
