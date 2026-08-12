@@ -1,57 +1,96 @@
-import Link from "next/link";
-import { listPageSummaries } from "@/lib/content";
-import Scanner from "@/components/Scanner";
+"use client";
 
-export default function Home() {
-  const summaries = listPageSummaries();
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+
+export default function SignInLanding() {
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isAuthenticating, setIsAuthenticating] = useState(false);
+
+  const handleSignIn = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsAuthenticating(true);
+    
+    // Mock authentication delay
+    setTimeout(() => {
+      router.push("/dashboard");
+    }, 1200);
+  };
 
   return (
-    <main className="desk">
-      <div className="device landing">
-        <section className="hero">
-          <span className="hero__badge">
-            <span className="hero__logo">P</span>
-            PW <b>Twin</b>
-          </span>
-          <h1 className="hero__title">
-            Scan the page. Meet its <span className="mark">twin</span>.
+    <main className="premium-landing">
+      {/* Dynamic Background Elements */}
+      <div className="mesh-bg"></div>
+      <div className="orb orb-1"></div>
+      <div className="orb orb-2"></div>
+
+      <div className="premium-landing__content">
+        <header className="premium-landing__header">
+          <div className="logo-lockup">
+            <span className="logo-mark">P</span>
+            <span className="logo-text">PW <b>Twin</b></span>
+          </div>
+        </header>
+
+        <section className="premium-landing__hero">
+          <h1 className="hero-title">
+            Unlock the <span className="highlight-text">Digital Twin</span>
           </h1>
-          <p className="hero__sub">
-            Every printed JEE &amp; NEET module page has a QR. Scan it to open that exact page&apos;s
-            questions, mnemonics, cheat sheet and step-by-step solutions — and ask your doubts.
+          <p className="hero-subtitle">
+            Experience the future of printed modules. Sign in to access your digital companion, AI doubt resolution, and step-by-step interactive solutions.
           </p>
         </section>
 
-        <Scanner />
+        <div className="auth-card-wrapper">
+          <form className="auth-card" onSubmit={handleSignIn}>
+            <div className="auth-card__header">
+              <h2>Welcome Back</h2>
+              <p>Enter your credentials to continue</p>
+            </div>
 
-        <section className="demo">
-          <p className="demo__label">No book handy? Try a sample page</p>
-          <div className="demo__grid">
-            {summaries.map((s) => (
-              <Link
-                key={s.id}
-                href={`/p/${s.id}`}
-                className="demoItem"
-                data-subject={s.subject}
-              >
-                <span className="demoItem__spine" aria-hidden />
-                <span className="demoItem__body">
-                  <span className="demoItem__title">{s.title}</span>
-                  <span className="demoItem__meta">
-                    {s.subject} · {s.chapter} · p.{s.pageNumber}
-                  </span>
-                </span>
-                <span className="demoItem__go" aria-hidden>
-                  →
-                </span>
-              </Link>
-            ))}
-          </div>
-        </section>
+            <div className="input-group">
+              <label htmlFor="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
 
-        <p className="landing__foot">
-          Publishing these books? <Link href="/publisher">Generate the printable QR codes →</Link>
-        </p>
+            <div className="input-group">
+              <label htmlFor="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="••••••••"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </div>
+
+            <button 
+              type="submit" 
+              className={`btn-primary ${isAuthenticating ? 'loading' : ''}`}
+              disabled={isAuthenticating}
+            >
+              <span className="btn-text">
+                {isAuthenticating ? 'Authenticating...' : 'Sign In'}
+              </span>
+              {!isAuthenticating && <span className="btn-icon">→</span>}
+            </button>
+            
+            <p className="auth-card__footer">
+              Publishing these books? <Link href="/publisher">Publisher portal</Link>
+            </p>
+          </form>
+        </div>
       </div>
     </main>
   );
