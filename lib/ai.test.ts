@@ -15,6 +15,27 @@ test("buildSystemPrompt names the page and forbids going off-page", () => {
   assert.match(sys, /solid sphere/i);
 });
 
+test("buildSystemPrompt is the elite mentor prompt", () => {
+  const sys = buildSystemPrompt(page);
+  // Verbatim markers from the mentor prompt, start to finish.
+  assert.match(sys, /PW TWIN — ELITE JEE\/NEET PERSONAL MENTOR/);
+  assert.match(sys, /DIAGNOSE → EXPLAIN → GUIDE → ATTEMPT → EVALUATE → CORRECT → RETEST → RETAIN/);
+  assert.match(sys, /SOCRATIC TUTORING ENGINE/);
+  assert.match(sys, /NEXT UNSEEN QUESTION/);
+});
+
+test("buildSystemPrompt fills CURRENT PAGE INPUT with real page data", () => {
+  const sys = buildSystemPrompt(page);
+  const pageInput = sys.slice(sys.indexOf("49. CURRENT PAGE INPUT"));
+  assert.match(pageInput, /Subject: Physics/);
+  assert.match(pageInput, /Moment of Inertia & Rolling/);
+  // Question data, not the raw [QUESTION DATA] placeholder.
+  assert.doesNotMatch(pageInput, /\[QUESTION DATA\]/);
+  assert.doesNotMatch(pageInput, /\[DATA\]/);
+  assert.match(pageInput, /solid sphere/i);
+  assert.match(pageInput, /Correct answer:/);
+});
+
 test("groundedFallbackAnswer returns a question's stepwise reasoning on a keyword match", () => {
   const res = groundedFallbackAnswer(page, "why does the solid sphere reach the bottom first?");
   assert.equal(res.usedQuestionId, "phy-rot-207-q1");

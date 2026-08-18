@@ -1,4 +1,5 @@
 import type { PageContent, Question } from "./types";
+import { buildMentorSystemPrompt } from "./mentor-prompt";
 
 export type AnswerSource = "claude" | "offline";
 
@@ -117,41 +118,9 @@ export function groundedFallbackAnswer(
   };
 }
 
+/** The elite mentor prompt (lib/mentor-prompt.ts) with this page's data injected. */
 export function buildSystemPrompt(page: PageContent): string {
-  const questions = page.questions
-    .map((q) => {
-      const steps = q.steps.map((s, i) => `    ${i + 1}. ${s.label}: ${s.detail}`).join("\n");
-      const opts = q.options ? `\n  Options: ${q.options.join(" | ")}` : "";
-      return `- ${q.code} (${q.difficulty}): ${q.prompt}${opts}\n  Answer: ${q.answer}\n  Why: ${q.why}\n  Steps:\n${steps}`;
-    })
-    .join("\n\n");
-
-  const mnemonics = page.mnemonics.map((m) => `- ${m.phrase}: ${m.expands}`).join("\n");
-  const shorthand = page.shorthand.map((s) => `- ${s.term} = ${s.meaning}`).join("\n");
-  const cheat = page.cheatSheet.map((r) => `- ${r.name}: ${r.value}`).join("\n");
-
-  return [
-    `You are PW Twin, a warm, encouraging JEE/NEET study companion embedded next to a single printed module page.`,
-    `You are STRICTLY scoped to THIS page only. Do not answer questions about other pages, chapters, or unrelated topics.`,
-    `If a student asks something outside this page's scope, gently say it's beyond this page and point them to what this page does cover.`,
-    `Explain like a patient tutor: short steps, plain language, and the intuition behind the "why". Use the page's own mnemonics and shorthand when helpful.`,
-    ``,
-    `=== THIS PAGE ===`,
-    `Subject: ${page.subject}`,
-    `Book: ${page.book}`,
-    `Chapter: ${page.chapter} (page ${page.pageNumber})`,
-    `Title: ${page.title}`,
-    `Concept: ${page.concept}`,
-    ``,
-    `Questions on this page:`,
-    questions,
-    ``,
-    `Mnemonics:\n${mnemonics}`,
-    ``,
-    `Shorthand:\n${shorthand}`,
-    ``,
-    `Cheat sheet:\n${cheat}`,
-  ].join("\n");
+  return buildMentorSystemPrompt(page);
 }
 
 /**
