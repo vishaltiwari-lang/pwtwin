@@ -1,6 +1,26 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import katex from "katex";
+
+/** GPT-style \(…\) and \[…\] math delimiters → $…$/$$…$$ so one renderer handles both. */
+function normalizeMathDelimiters(text: string): string {
+  return text
+    .replace(/\\\[([\s\S]+?)\\\]/g, (_, m: string) => "$$" + m + "$$")
+    .replace(/\\\((.+?)\\\)/g, (_, m: string) => "$" + m + "$");
+}
+
+function mathSpan(latex: string, display: boolean, key: string): ReactNode {
+  return (
+    <span
+      key={key}
+      className={display ? "math math--block" : "math"}
+      dangerouslySetInnerHTML={{
+        __html: katex.renderToString(latex, { throwOnError: false, displayMode: display }),
+      }}
+    />
+  );
+}
 
 export interface ChatMessage {
   role: "user" | "assistant";
@@ -8,10 +28,10 @@ export interface ChatMessage {
   source?: "live" | "offline";
 }
 
-/** Parse a single line's inline **bold** and `code` into React nodes (no HTML injection). */
+/** Parse a single line's inline **bold**, `code`, and $math$ into React nodes (no HTML injection). */
 function renderInline(line: string, keyBase: string): ReactNode[] {
   const nodes: ReactNode[] = [];
-  const regex = /(\*\*[^*]+\*\*|`[^`]+`)/g;
+  const regex = /(\*\*[^*]+\*\*|`[^`]+`|\$\$[^$]+\$\$|\$[^$\n]+\$)/g;
   let last = 0;
   let match: RegExpExecArray | null;
   let i = 0;
@@ -20,6 +40,10 @@ function renderInline(line: string, keyBase: string): ReactNode[] {
     const token = match[0];
     if (token.startsWith("**")) {
       nodes.push(<strong key={`${keyBase}-b${i}`}>{token.slice(2, -2)}</strong>);
+    } else if (token.startsWith("$$")) {
+      nodes.push(mathSpan(token.slice(2, -2).trim(), true, `${keyBase}-M${i}`));
+    } else if (token.startsWith("$")) {
+      nodes.push(mathSpan(token.slice(1, -1).trim(), false, `${keyBase}-m${i}`));
     } else {
       nodes.push(<code key={`${keyBase}-c${i}`}>{token.slice(1, -1)}</code>);
     }
@@ -32,7 +56,7 @@ function renderInline(line: string, keyBase: string): ReactNode[] {
 
 /** Lightweight, safe markdown-ish renderer for bot replies. */
 function RichText({ text }: { text: string }) {
-  const lines = text.split("\n");
+  const lines = normalizeMathDelimiters(text).split("\n");
   const out: ReactNode[] = [];
   let para: string[] = [];
 

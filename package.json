@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "html5-qrcode": "^2.3.8",
+    "katex": "^0.18.4",
     "next": "^16.2.11",
     "qrcode": "^1.5.4",
     "react": "19.0.0",

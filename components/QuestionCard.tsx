@@ -1,6 +1,7 @@
 "use client";
 
 import type { Question } from "@/lib/types";
+import MathText from "./MathText";
 
 const OPTION_KEYS = ["A", "B", "C", "D", "E"];
 
@@ -22,7 +23,7 @@ export default function QuestionCard({
         </span>
       </div>
 
-      <p className="qcard__prompt">{question.prompt}</p>
+      <p className="qcard__prompt"><MathText text={question.prompt} /></p>
 
       {question.tags.length > 0 && (
         <ul className="qcard__topics" aria-label="Topics">
@@ -39,7 +40,7 @@ export default function QuestionCard({
           {question.options.map((opt, i) => (
             <li className="qopt" key={i} data-correct="false">
               <span className="qopt__key">{OPTION_KEYS[i]}</span>
-              {opt}
+              <span><MathText text={opt} /></span>
             </li>
           ))}
         </ul>

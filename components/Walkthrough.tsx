@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { Question } from "@/lib/types";
+import MathText from "./MathText";
 
 const OPTION_KEYS = ["A", "B", "C", "D", "E"];
 
@@ -54,7 +55,7 @@ export default function Walkthrough({
                 {question.difficulty}
               </span>
             </div>
-            <p className="qcard__prompt">{question.prompt}</p>
+            <p className="qcard__prompt"><MathText text={question.prompt} /></p>
             {question.options && (
               <ul className="qcard__options">
                 {question.options.map((opt, i) => (
@@ -64,7 +65,7 @@ export default function Walkthrough({
                     data-correct={answerRevealed && opt === question.answer ? "true" : "false"}
                   >
                     <span className="qopt__key">{OPTION_KEYS[i]}</span>
-                    {opt}
+                    <span><MathText text={opt} /></span>
                   </li>
                 ))}
               </ul>
@@ -85,7 +86,7 @@ export default function Walkthrough({
                   </span>
                   <span className="step__body">
                     <span className="step__label">{step.label}. </span>
-                    <span className="step__detail">{step.detail}</span>
+                    <span className="step__detail"><MathText text={step.detail} /></span>
                   </span>
                 </li>
               ) : (
@@ -102,9 +103,9 @@ export default function Walkthrough({
           {answerRevealed && (
             <div className="solution walk__answer">
               <p className="solution__answer">
-                Answer: <b>{question.answer}</b>
+                Answer: <b><MathText text={question.answer} /></b>
               </p>
-              <p className="solution__why read">{question.why}</p>
+              <p className="solution__why read"><MathText text={question.why} /></p>
             </div>
           )}
         </div>
