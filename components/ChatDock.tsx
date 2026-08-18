@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 export interface ChatMessage {
   role: "user" | "assistant";
   text: string;
-  source?: "claude" | "offline";
+  source?: "live" | "offline";
 }
 
 /** Parse a single line's inline **bold** and `code` into React nodes (no HTML injection). */
@@ -113,7 +113,7 @@ export default function ChatDock({
         body: JSON.stringify({ pageId, message: trimmed, history }),
       });
       if (!res.ok) throw new Error("bad status");
-      const data: { reply: string; source: "claude" | "offline" } = await res.json();
+      const data: { reply: string; source: "live" | "offline" } = await res.json();
       setMessages((prev) => [
         ...prev,
         { role: "assistant", text: data.reply, source: data.source },
@@ -187,7 +187,7 @@ export default function ChatDock({
                   </div>
                   {m.role === "assistant" && (
                     <span className="msg__meta">
-                      {m.source === "claude" ? "live tutor" : "page tutor"}
+                      {m.source === "live" ? "live tutor" : "page tutor"}
                     </span>
                   )}
                 </div>

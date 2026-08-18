@@ -1,7 +1,7 @@
 import type { PageContent, Question } from "./types";
 import { buildMentorSystemPrompt } from "./mentor-prompt";
 
-export type AnswerSource = "claude" | "offline";
+export type AnswerSource = "live" | "offline";
 
 export interface ChatTurn {
   role: "user" | "assistant";
@@ -124,54 +124,51 @@ export function buildSystemPrompt(page: PageContent): string {
 }
 
 /**
- * Answers a page-scoped doubt. Uses Claude when ANTHROPIC_API_KEY is set,
- * otherwise returns the deterministic grounded fallback.
+ * Answers a page-scoped doubt. Uses OpenRouter (GPT-5.6 Terra by default,
+ * OPENROUTER_MODEL to override) when OPENROUTER_API_KEY is set, otherwise
+ * returns the deterministic grounded fallback.
  */
 export async function answerDoubt(
   page: PageContent,
   userText: string,
   history: ChatTurn[] = [],
 ): Promise<{ text: string; source: AnswerSource }> {
-  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
+  const apiKey = process.env.OPENROUTER_API_KEY?.trim();
   if (!apiKey) {
     return { text: groundedFallbackAnswer(page, userText).text, source: "offline" };
   }
 
   try {
-    const { default: Anthropic } = await import("@anthropic-ai/sdk");
-    const client = new Anthropic({ apiKey });
-    const model = process.env.ANTHROPIC_MODEL?.trim() || "claude-sonnet-5";
+    const model = process.env.OPENROUTER_MODEL?.trim() || "openai/gpt-5.6-terra";
 
     const messages = [
-      ...history.slice(-8).map((t) => ({
-        role: t.role,
-        content: t.text,
-      })),
+      { role: "system" as const, content: buildSystemPrompt(page) },
+      ...history.slice(-8).map((t) => ({ role: t.role, content: t.text })),
       { role: "user" as const, content: userText },
     ];
 
-    const response = await client.messages.create({
-      model,
-      max_tokens: 1200,
-      system: buildSystemPrompt(page),
-      messages,
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+        "X-Title": "PW Twin",
+      },
+      body: JSON.stringify({ model, max_tokens: 1200, messages }),
     });
-
-    // "refusal" exists on newer models/SDKs; compare as string for forward-compat.
-    if ((response.stop_reason as string) === "refusal") {
+    if (!response.ok) {
       return { text: groundedFallbackAnswer(page, userText).text, source: "offline" };
     }
 
-    const text = response.content
-      .filter((b): b is { type: "text"; text: string } => b.type === "text")
-      .map((b) => b.text)
-      .join("\n")
-      .trim();
+    const data = (await response.json()) as {
+      choices?: { message?: { content?: string | null } }[];
+    };
+    const text = data.choices?.[0]?.message?.content?.trim();
 
     if (!text) {
       return { text: groundedFallbackAnswer(page, userText).text, source: "offline" };
     }
-    return { text, source: "claude" };
+    return { text, source: "live" };
   } catch {
     // Network/key/model error — never break the student's flow.
     return { text: groundedFallbackAnswer(page, userText).text, source: "offline" };

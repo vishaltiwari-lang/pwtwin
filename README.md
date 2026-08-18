@@ -41,18 +41,19 @@ That's it — the app runs fully offline. No API keys, no external services.
   the scanned page's** content:
   - **Offline (default):** a deterministic engine matches the doubt to the page's questions,
     mnemonics, or cheat sheet and returns the relevant stepwise explanation — no network needed.
-  - **Live (optional):** if `ANTHROPIC_API_KEY` is set, it calls Claude with a system prompt that
-    embeds the page and forbids answering anything off-page.
+  - **Live (optional):** if `OPENROUTER_API_KEY` is set, it calls GPT-5.6 Terra via OpenRouter
+    (override with `OPENROUTER_MODEL`) with a mentor system prompt that embeds the page and
+    forbids answering anything off-page.
 
-### Optional: turn on live Claude answers
+### Optional: turn on live AI answers
 
 ```bash
 cp .env.local.example .env.local
-# paste your key into ANTHROPIC_API_KEY, then restart `npm run dev`
+# paste your key into OPENROUTER_API_KEY, then restart `npm run dev`
 ```
 
 Without a key, the doubt chat still works using the offline engine. Answers show a small
-`page tutor` (offline) or `live tutor` (Claude) label.
+`page tutor` (offline) or `live tutor` (OpenRouter) label.
 
 ---
 

@@ -1,9 +1,49 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildSystemPrompt, groundedFallbackAnswer } from "./ai";
+import { answerDoubt, buildSystemPrompt, groundedFallbackAnswer } from "./ai";
 import { getPage } from "./content";
 
 const page = getPage("phy-rot-207")!;
+
+test("answerDoubt calls OpenRouter with GPT-5.6 Terra when a key is set", async () => {
+  process.env.OPENROUTER_API_KEY = "test-key";
+  delete process.env.OPENROUTER_MODEL;
+  const calls: { url: string; init: RequestInit }[] = [];
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = (async (url: unknown, init: unknown) => {
+    calls.push({ url: String(url), init: init as RequestInit });
+    return new Response(
+      JSON.stringify({ choices: [{ message: { content: "Guided hint." } }] }),
+      { status: 200 },
+    );
+  }) as typeof fetch;
+  try {
+    const res = await answerDoubt(page, "explain q1", [{ role: "user", text: "hi" }]);
+    assert.equal(res.source, "live");
+    assert.equal(res.text, "Guided hint.");
+    assert.equal(calls.length, 1);
+    assert.match(calls[0].url, /^https:\/\/openrouter\.ai\/api\/v1\/chat\/completions$/);
+    assert.equal(
+      (calls[0].init.headers as Record<string, string>).Authorization,
+      "Bearer test-key",
+    );
+    const body = JSON.parse(String(calls[0].init.body));
+    assert.equal(body.model, "openai/gpt-5.6-terra");
+    assert.equal(body.messages[0].role, "system");
+    assert.match(body.messages[0].content, /ELITE JEE\/NEET PERSONAL MENTOR/);
+    assert.equal(body.messages.at(-1).content, "explain q1");
+  } finally {
+    globalThis.fetch = realFetch;
+    delete process.env.OPENROUTER_API_KEY;
+  }
+});
+
+test("answerDoubt falls back to the offline tutor without an OpenRouter key", async () => {
+  delete process.env.OPENROUTER_API_KEY;
+  const res = await answerDoubt(page, "why does the solid sphere reach the bottom first?");
+  assert.equal(res.source, "offline");
+  assert.match(res.text, /hollow sphere/i);
+});
 
 test("buildSystemPrompt names the page and forbids going off-page", () => {
   const sys = buildSystemPrompt(page);
