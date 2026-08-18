@@ -2,13 +2,16 @@
   "name": "pw-twin-ai",
   "version": "1.0.0",
   "private": true,
-  "description": "QR page-companion chatbot for JEE/NEET printed modules — scan a page, meet its digital twin.",
+  "description": "QR page-companion chatbot for JEE/NEET printed modules \u2014 scan a page, meet its digital twin.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "node --test --import tsx \"lib/**/*.test.ts\""
+    "test": "node --test --import tsx \"lib/**/*.test.ts\"",
+    "qr": "node scripts/generate-qr.mjs",
+    "pdf": "tsx scripts/generate-pdf.ts",
+    "figures": "python3 scripts/extract-figures.py"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",

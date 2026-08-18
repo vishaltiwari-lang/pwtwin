@@ -1,10 +1,12 @@
 import type { PageContent, PageSummary } from "./types";
 import { PAGES } from "./data/pages";
+import { loadPaperPages } from "./papers";
 
-const BY_ID = new Map<string, PageContent>(PAGES.map((p) => [p.id, p]));
+const ALL_PAGES: PageContent[] = [...PAGES, ...loadPaperPages()];
+const BY_ID = new Map<string, PageContent>(ALL_PAGES.map((p) => [p.id, p]));
 
 export function getAllPages(): PageContent[] {
-  return PAGES;
+  return ALL_PAGES;
 }
 
 export function getPage(id: string): PageContent | undefined {
@@ -12,7 +14,7 @@ export function getPage(id: string): PageContent | undefined {
 }
 
 export function listPageSummaries(): PageSummary[] {
-  return PAGES.map(({ id, subject, book, chapter, pageNumber, title }) => ({
+  return ALL_PAGES.map(({ id, subject, book, chapter, pageNumber, title }) => ({
     id,
     subject,
     book,

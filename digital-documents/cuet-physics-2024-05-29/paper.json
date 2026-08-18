@@ -1,0 +1,2407 @@
+{
+  "id": "cuet-physics-2024-05-29",
+  "kind": "question-paper",
+  "exam": "NTA CUET (UG)",
+  "subject": "Physics",
+  "title": "NTA CUET (UG) Physics — 29 May 2024",
+  "date": "2024-05-29",
+  "fullMarks": 200,
+  "timeMinutes": 60,
+  "instructions": [
+    "Attempt only 40 questions out of the given 50 questions.",
+    "Each question carries 5 marks.",
+    "One mark will be deducted for a wrong answer."
+  ],
+  "sourcePdf": "papersraw/cuet 29 MAY 2024.pdf",
+  "sections": [
+    {
+      "name": "Physics",
+      "marksPerQuestion": 5,
+      "questionNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cuet-physics-2024-05-29-q01",
+      "code": "Q1",
+      "number": 1,
+      "pdfPage": 1,
+      "marks": 5,
+      "prompt": "The kinetic energy of an electron in the ground level of a hydrogen atom is K units. The values of its potential energy and total energy respectively are _______.",
+      "options": [
+        "$-2K$; $-K$",
+        "$+2K$; $-K$",
+        "$-K$; $+2K$",
+        "$+K$; $+2K$"
+      ],
+      "answer": "(a) $-2K$; $-K$",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Recall Bohr-orbit energy relations",
+          "detail": "For an electron in the ground state of a hydrogen atom, Kinetic Energy (KE) = K."
+        },
+        {
+          "label": "Potential energy",
+          "detail": "$PE = -2 \\times KE = -2K$."
+        },
+        {
+          "label": "Total energy",
+          "detail": "$TE = KE + PE = K - 2K = -K$."
+        }
+      ],
+      "why": "In the Bohr model the potential energy is always minus twice the kinetic energy, so with KE = K the potential energy is −2K and the total energy is K − 2K = −K.",
+      "tags": [
+        "bohr model",
+        "hydrogen atom",
+        "kinetic energy",
+        "potential energy",
+        "total energy",
+        "atomic physics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q02",
+      "code": "Q2",
+      "number": 2,
+      "pdfPage": 1,
+      "marks": 5,
+      "prompt": "Two nuclei have mass numbers A and B respectively. The density ratio of the nuclei is _______.",
+      "options": [
+        "$A : B$",
+        "$\\sqrt{A} : \\sqrt{B}$",
+        "$A^2 : B^2$",
+        "$1 : 1$"
+      ],
+      "answer": "(d) $1 : 1$",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Key fact",
+          "detail": "The density of a nucleus is independent of its mass number."
+        },
+        {
+          "label": "Conclude",
+          "detail": "Therefore, the density ratio of any two nuclei is always $1 : 1$."
+        }
+      ],
+      "why": "Nuclear density is a constant (~2.3 × 10^17 kg/m³) independent of mass number, so any two nuclei have a density ratio of 1 : 1.",
+      "tags": [
+        "nuclear density",
+        "mass number",
+        "nucleus",
+        "nuclear physics",
+        "density ratio"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q03",
+      "code": "Q3",
+      "number": 3,
+      "pdfPage": 1,
+      "marks": 5,
+      "prompt": "A point source causing photoelectric emission from a metallic plate is moved away from the plate. The variation of photoelectric current with distance from the source is correctly represented by the graph _______.",
+      "options": [
+        "Graph (a): photoelectric current increases linearly with distance",
+        "Graph (b): photoelectric current rises with distance and saturates",
+        "Graph (c): photoelectric current falls off sharply with distance (like $1/d^2$), levelling off",
+        "Graph (d): photoelectric current decreases linearly with distance"
+      ],
+      "answer": "(c) Graph (c): photoelectric current falls off sharply with distance (like $1/d^2$), levelling off",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Intensity falls with distance",
+          "detail": "As the point source is moved away from the metallic plate, the intensity of light falling on the plate decreases with distance."
+        },
+        {
+          "label": "Current follows intensity",
+          "detail": "This decrease in intensity reduces the photoelectric current; the correct graph showing this inverse relationship is graph (c)."
+        }
+      ],
+      "why": "Intensity from a point source falls as 1/d², and photoelectric current is proportional to intensity, so the current decays like 1/d² with distance — the steeply falling curve (c).",
+      "tags": [
+        "photoelectric effect",
+        "photoelectric current",
+        "intensity",
+        "inverse square law",
+        "point source",
+        "graph interpretation"
+      ],
+      "figure": "Four graphs of photoelectric current vs distance: (a) straight line rising from origin; (b) rising curve that saturates; (c) curve falling steeply like 1/d² and levelling off toward zero; (d) straight line falling with distance.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q03-a.png",
+        "figures/q03-b.png",
+        "figures/q03-c.png",
+        "figures/q03-d.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q04",
+      "code": "Q4",
+      "number": 4,
+      "pdfPage": 1,
+      "marks": 5,
+      "prompt": "A proton accelerated through a potential difference V has a de Broglie wavelength $\\lambda$. On doubling the accelerating potential, de Broglie wavelength of the proton _______.",
+      "options": [
+        "remains unchanged",
+        "becomes double",
+        "becomes four times",
+        "decreases"
+      ],
+      "answer": "(d) decreases",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "de Broglie relation",
+          "detail": "$\\lambda = h/\\sqrt{2meV}$, where h is Planck's constant, m the mass, e the charge, and V the potential difference."
+        },
+        {
+          "label": "Double the potential",
+          "detail": "$\\lambda' = h/\\sqrt{2me(2V)} = \\lambda/\\sqrt{2}$."
+        },
+        {
+          "label": "Conclude",
+          "detail": "Thus the de Broglie wavelength decreases."
+        }
+      ],
+      "why": "Since λ ∝ 1/√V, doubling the accelerating potential reduces the wavelength by a factor of √2 — it decreases.",
+      "tags": [
+        "de broglie wavelength",
+        "proton",
+        "accelerating potential",
+        "matter waves",
+        "dual nature"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q05",
+      "code": "Q5",
+      "number": 5,
+      "pdfPage": 1,
+      "marks": 5,
+      "prompt": "The shortest wavelengths emitted in hydrogen spectrum corresponding to different spectral series are as under: A. Pfund series, B. Balmer series, C. Brackett series, D. Lyman series. The wavelengths arranged correctly in decreasing order are ______.",
+      "options": [
+        "(A), (B), (C), (D)",
+        "(A), (C), (B), (D)",
+        "(B), (A), (D), (C)",
+        "(A), (C), (D), (B)"
+      ],
+      "answer": "(b) (A), (C), (B), (D)",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Series limits",
+          "detail": "Lyman series (n = 1, n = ∞) has the shortest wavelength; Balmer (n = 2), Brackett (n = 4), Pfund (n = 5, longest wavelength)."
+        },
+        {
+          "label": "Order",
+          "detail": "Decreasing wavelength order: Pfund (A), Brackett (C), Balmer (B), Lyman (D)."
+        }
+      ],
+      "why": "The series-limit wavelength grows with the lower level n, so Pfund (n=5) > Brackett (n=4) > Balmer (n=2) > Lyman (n=1) — order (A), (C), (B), (D).",
+      "tags": [
+        "hydrogen spectrum",
+        "spectral series",
+        "lyman series",
+        "balmer series",
+        "pfund series",
+        "brackett series",
+        "wavelength"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q06",
+      "code": "Q6",
+      "number": 6,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "Silicon can be doped using one of the following elements as dopant: A. Arsenic, B. Indium, C. Phosphorus, D. Boron. To get n-type semiconductor, the dopants that can be used are ______.",
+      "options": [
+        "(A) and (C) only",
+        "(B) and (C) only",
+        "(A), (B), (C) and (D)",
+        "(C) and (D) only"
+      ],
+      "answer": "(a) (A) and (C) only",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "n-type needs pentavalent dopants",
+          "detail": "For n-type semiconductors, elements with five valence electrons (pentavalent impurities) are used as dopants."
+        },
+        {
+          "label": "Identify pentavalent elements",
+          "detail": "Arsenic (A) and Phosphorus (C) are pentavalent impurities, making them suitable for creating n-type semiconductors."
+        }
+      ],
+      "why": "n-type doping requires pentavalent atoms that donate an extra electron; of the list, only arsenic and phosphorus are pentavalent (indium and boron are trivalent, giving p-type).",
+      "tags": [
+        "semiconductor",
+        "doping",
+        "n-type",
+        "pentavalent impurity",
+        "arsenic",
+        "phosphorus",
+        "silicon"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q07",
+      "code": "Q7",
+      "number": 7,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "Given below are V versus I graphs for different types of p–n junction diodes marked A, B, C, and D. The correct sequence of graphs corresponding to forward biased p–n junction, Zener diode, photo diode, and solar cell in order is ______.",
+      "options": [
+        "(D), (C), (A), (B)",
+        "(A), (C), (B), (D)",
+        "(B), (A), (D), (C)",
+        "(C), (B), (D), (A)"
+      ],
+      "answer": "(a) (D), (C), (A), (B)",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Identify each graph",
+          "detail": "(A) is a photo diode — current proportional to light intensity with a reverse characteristic. (B) is a solar cell — shows short-circuit current ($I_{sc}$) and open-circuit voltage ($V_{oc}$)."
+        },
+        {
+          "label": "Remaining graphs",
+          "detail": "(C) is a Zener diode — sharp breakdown in reverse bias. (D) is a forward biased p–n junction diode — exponential increase in current with voltage."
+        },
+        {
+          "label": "Sequence",
+          "detail": "Forward biased p–n junction, Zener, photo diode, solar cell → (D), (C), (A), (B)."
+        }
+      ],
+      "why": "Matching each characteristic curve to its device (exponential forward rise = ordinary diode, reverse breakdown = Zener, reverse light-dependent current = photodiode, fourth-quadrant curve with Voc and Isc = solar cell) gives the sequence (D), (C), (A), (B).",
+      "tags": [
+        "p-n junction",
+        "diode characteristics",
+        "zener diode",
+        "photodiode",
+        "solar cell",
+        "i-v graph",
+        "semiconductor devices"
+      ],
+      "figure": "Four I–V graphs with I(mA)/I(μA) axes vs v(volts). A: small reverse current growing in the third quadrant (photodiode-style reverse characteristic). B: fourth-quadrant curve crossing at V_oc (open-circuit voltage) on the +v axis and I_sc (short-circuit current) on the −I axis (solar cell). C: forward rise plus sharp near-vertical reverse breakdown at V_z (Zener), 'Forward bias' labelled. D: exponential current rise in forward bias only (ordinary p–n junction).",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q07.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q08",
+      "code": "Q8",
+      "number": 8,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "A wire carrying current I, bent as shown in the figure, is placed in a uniform field B that emerges normally out of the plane of the figure. The force on this wire is ______.",
+      "options": [
+        "4BIR, directed vertically downward",
+        "3BIR, directed vertically upward",
+        "BI(2R + $\\pi$R), vertically downward",
+        "$2\\pi$BIR, from P to Q"
+      ],
+      "answer": "(a) 4BIR, directed vertically downward",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Force law",
+          "detail": "The force on a current-carrying wire in a magnetic field is $F = I(L \\times B)$, where L is the length of the wire in the direction of the field."
+        },
+        {
+          "label": "Straight segments",
+          "detail": "For the straight segments the force will be $2 \\times BIR$ downward."
+        },
+        {
+          "label": "Semicircular segment",
+          "detail": "For the semicircular segment of radius R the force is directed downward with $F = I(2R)B$, since the effective length of the semicircle is 2R."
+        },
+        {
+          "label": "Total",
+          "detail": "Thus the force on the wire is 4BIR, vertically downward."
+        }
+      ],
+      "why": "Each part contributes a force B·I·(effective straight length): 2R from the two straight pieces and 2R (the diameter) from the semicircle, giving 4BIR directed vertically downward.",
+      "tags": [
+        "magnetic force",
+        "current carrying wire",
+        "semicircular wire",
+        "uniform magnetic field",
+        "effective length",
+        "moving charges and magnetism"
+      ],
+      "figure": "Wire from P (left) to Q (right) carrying current I: straight segment of length R, semicircular arc of radius R bulging upward, straight segment of length R. Dots fill the region indicating field B out of the plane.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q08.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q09",
+      "code": "Q9",
+      "number": 9,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "The refractive index of the material of an equilateral prism is $\\sqrt{2}$. The angle of minimum deviation of that prism is ______.",
+      "options": [
+        "60°",
+        "75°",
+        "30°",
+        "90°"
+      ],
+      "answer": "(c) 30°",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Minimum deviation formula",
+          "detail": "$n = \\sin[(A + \\delta_{min})/2]/\\sin(A/2)$ with $A = 60°$ for an equilateral prism."
+        },
+        {
+          "label": "Substitute",
+          "detail": "$\\sqrt{2} = \\sin[(60° + \\delta_{min})/2]/0.5$, so $\\sin[(60° + \\delta_{min})/2] = 1/\\sqrt{2}$."
+        },
+        {
+          "label": "Solve",
+          "detail": "$(60° + \\delta_{min})/2 = 45°$, hence $60° + \\delta_{min} = 90°$ and $\\delta_{min} = 30°$."
+        }
+      ],
+      "why": "Applying the prism formula n = sin((A+δmin)/2)/sin(A/2) with n = √2 and A = 60° forces (60°+δmin)/2 = 45°, so the minimum deviation is 30°.",
+      "tags": [
+        "prism",
+        "minimum deviation",
+        "refractive index",
+        "ray optics",
+        "equilateral prism"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q10",
+      "code": "Q10",
+      "number": 10,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "The transfer of integral number of ______ is one of the evidence of quantization of electric charge.",
+      "options": [
+        "photons",
+        "nuclei",
+        "electrons",
+        "neutrons"
+      ],
+      "answer": "(c) electrons",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Quantization of charge",
+          "detail": "Quantization of electric charge means charge exists in discrete packets rather than in a continuous manner."
+        },
+        {
+          "label": "Evidence",
+          "detail": "This is evidenced by the transfer of integral numbers of electrons, as electrons are the fundamental charge carriers."
+        }
+      ],
+      "why": "Charge changes only by whole multiples of e because charging happens by transfer of an integral number of electrons, the fundamental charge carriers.",
+      "tags": [
+        "quantization of charge",
+        "electron",
+        "electric charge",
+        "electrostatics",
+        "fundamental charge"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q11",
+      "code": "Q11",
+      "number": 11,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "When a slab of insulating material 4 mm thick is introduced between the plates of a parallel plate capacitor of separation 4 mm, it is found that the distance between the plates has to be increased by 3.2 mm to restore the capacity to its original value. The dielectric constant of the material is ______.",
+      "options": [
+        "2",
+        "5",
+        "3",
+        "7"
+      ],
+      "answer": "(b) 5",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Capacitance with dielectric",
+          "detail": "$C = \\kappa\\varepsilon_0 A/d$; with a slab of thickness t the effective separation is $d_{eff} = d - t + t/\\kappa$."
+        },
+        {
+          "label": "Apply restore condition",
+          "detail": "The distance is increased by 3.2 mm to restore the capacity: $3.2 + 4/\\kappa = 4$ (with $d - t = 3.2$ and $t = 4$)."
+        },
+        {
+          "label": "Solve",
+          "detail": "$\\kappa = 5$."
+        }
+      ],
+      "why": "Inserting a slab of thickness t reduces the effective separation to d − t + t/κ; restoring the original capacitance after moving the plates 3.2 mm apart requires 3.2 + 4/κ = 4, so κ = 5.",
+      "tags": [
+        "parallel plate capacitor",
+        "dielectric constant",
+        "dielectric slab",
+        "capacitance",
+        "electrostatics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q12",
+      "code": "Q12",
+      "number": 12,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "A copper ball of density 8.0 g/cc and 1 cm in diameter is immersed in oil of density 0.8 g/cc. The charge on the ball if it remains just suspended in oil in an electric field of intensity 600 N/C acting in the upward direction is ______. (Take g = 10 m/s²)",
+      "options": [
+        "$2 \\times 10^{-6}$ C",
+        "$2 \\times 10^{-5}$ C",
+        "$1 \\times 10^{-5}$ C",
+        "$1 \\times 10^{-6}$ C"
+      ],
+      "answer": "(b) $2 \\times 10^{-5}$ C (per the Answer Key; the paper's own explanation computes $6.288 \\times 10^{-5}$ C and states 'no option match')",
+      "difficulty": "Hard",
+      "steps": [
+        {
+          "label": "Set up quantities",
+          "detail": "$\\rho_c$ = 8.0 g/cc = 8000 kg/m³, $\\rho_o$ = 0.8 g/cc = 800 kg/m³; volume $V = (4/3)\\pi(0.005)^3 = 5.24 \\times 10^{-7}$ m³; mass $m = \\rho_c V = 4.192 \\times 10^{-3}$ kg."
+        },
+        {
+          "label": "Forces",
+          "detail": "Buoyant force $F_b = \\rho_o V g = 4.192 \\times 10^{-4}$ N (printed as $4.192 \\times 10^{-3}$ N); electric force $F_e = qE$ with E = 600 N/C."
+        },
+        {
+          "label": "Balance",
+          "detail": "$qE + \\frac{4}{3}\\pi r^3\\rho_o g = \\frac{4}{3}\\pi r^3\\rho_{cu} g$, so $q = \\frac{(4/3) \\times 3.14 \\times (0.005)^3 \\times 7.2 \\times 10^3 \\times 10}{600}$."
+        },
+        {
+          "label": "Result (as printed)",
+          "detail": "$q = 6.288 \\times 10^{-5}$ C — 'no option match.' The Answer Key nevertheless marks (b)."
+        }
+      ],
+      "why": "Balancing weight against buoyancy plus the upward electric force gives q = V(ρcu − ρoil)g / E; the paper's own arithmetic yields 6.288 × 10⁻⁵ C, which matches no option, though the key marks (b) 2 × 10⁻⁵ C.",
+      "tags": [
+        "electric field",
+        "charged ball",
+        "buoyancy",
+        "equilibrium",
+        "electrostatics",
+        "force balance"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q13",
+      "code": "Q13",
+      "number": 13,
+      "pdfPage": 2,
+      "marks": 5,
+      "prompt": "A metal wire is subjected to a constant potential difference. When the temperature of the metal wire increases, the drift velocity of the electron in it ______.",
+      "options": [
+        "increases, thermal velocity of the electrons decreases",
+        "decreases, thermal velocity of the electrons decreases",
+        "increases, thermal velocity of the electrons increases",
+        "decreases, thermal velocity of the electrons increases"
+      ],
+      "answer": "(d) decreases, thermal velocity of the electrons increases",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Effect of temperature on collisions",
+          "detail": "When the temperature increases, the lattice ions vibrate more vigorously, increasing the rate of collisions between electrons and ions."
+        },
+        {
+          "label": "Consequences",
+          "detail": "The increased collision rate reduces the drift velocity ($v_d$); however, the thermal velocity ($v_t$) of the electrons increases with temperature."
+        }
+      ],
+      "why": "Higher temperature means more frequent electron–ion collisions (shorter relaxation time), lowering drift velocity, while random thermal speeds grow with temperature.",
+      "tags": [
+        "drift velocity",
+        "thermal velocity",
+        "temperature dependence",
+        "current electricity",
+        "resistivity",
+        "electron collisions"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q14",
+      "code": "Q14",
+      "number": 14,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "For the given mixed combination of resistors, calculate the total resistance between points A and B.",
+      "options": [
+        "9 $\\Omega$",
+        "18 $\\Omega$",
+        "4 $\\Omega$",
+        "14 $\\Omega$"
+      ],
+      "answer": "(b) 18 $\\Omega$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Top branch",
+          "detail": "Combine the two 4 $\\Omega$ resistors in series at the top: $R_{s1} = 4 + 4 = 8\\ \\Omega$; this 8 $\\Omega$ in parallel with the 8 $\\Omega$ resistor gives $R_{p1} = 4\\ \\Omega$."
+        },
+        {
+          "label": "Middle reduction",
+          "detail": "Combine that 4 $\\Omega$ with the two side 4 $\\Omega$ resistors in series: $R_{s2} = 4 + 4 + 4 = 12\\ \\Omega$; this 12 $\\Omega$ in parallel with the 12 $\\Omega$ resistor gives $R_{p2} = 6\\ \\Omega$."
+        },
+        {
+          "label": "Final series sum",
+          "detail": "Combine the 6 $\\Omega$ with the two 6 $\\Omega$ legs in series: $R_{s3} = 6 + 6 + 6 = 18\\ \\Omega$."
+        }
+      ],
+      "why": "Repeated series–parallel reduction of the ladder (8∥8 → 4, then 4+4+4 = 12, 12∥12 → 6, then 6+6+6) gives 18 Ω between A and B.",
+      "tags": [
+        "resistors",
+        "series parallel combination",
+        "equivalent resistance",
+        "current electricity",
+        "network reduction"
+      ],
+      "figure": "Triangular resistor ladder between A (bottom left) and B (bottom right): top path has two 4 Ω in series; inner path has 4 Ω (left side), 8 Ω bridging horizontally in the middle, 4 Ω (right side); a 12 Ω bridges horizontally below; the two lower legs to A and B are 6 Ω each.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q14.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q15",
+      "code": "Q15",
+      "number": 15,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "A cell of emf 1.1 V and internal resistance 0.5 $\\Omega$ is connected to a wire of resistance 0.5 $\\Omega$. Another cell of the same emf is now connected in series with the intention of increasing the current but the current in the wire remains the same. The internal resistance of the second cell is ______.",
+      "options": [
+        "1 $\\Omega$",
+        "2.5 $\\Omega$",
+        "1.5 $\\Omega$",
+        "2 $\\Omega$"
+      ],
+      "answer": "(a) 1 $\\Omega$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Initial current",
+          "detail": "$I = E_1/(r_1 + R) = 1.1/(0.5 + 0.5) = 1.1$ A."
+        },
+        {
+          "label": "With second cell in series",
+          "detail": "Total emf $= E_1 + E_2 = 2.2$ V and total internal resistance $= r_1 + r_2$; current unchanged: $1.1 = 2.2/(0.5 + r_2 + 0.5)$."
+        },
+        {
+          "label": "Solve",
+          "detail": "$1.1(1 + r_2) = 2.2 \\Rightarrow r_2 = 1\\ \\Omega$."
+        }
+      ],
+      "why": "Doubling the emf while keeping the same 1.1 A current means the total resistance must also double from 1 Ω to 2 Ω, so the second cell's internal resistance is 1 Ω.",
+      "tags": [
+        "emf",
+        "internal resistance",
+        "cells in series",
+        "ohms law",
+        "current electricity"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q16",
+      "code": "Q16",
+      "number": 16,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "P, Q, R, and S are four wires of resistances 3 $\\Omega$, 3 $\\Omega$, 3 $\\Omega$, and 4 $\\Omega$ respectively. They are connected to form the four arms of a Wheatstone bridge circuit. The resistance with which S must be shunted in order that the bridge may be balanced is ______.",
+      "options": [
+        "14 $\\Omega$",
+        "12 $\\Omega$",
+        "15 $\\Omega$",
+        "7 $\\Omega$"
+      ],
+      "answer": "(b) 12 $\\Omega$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Balance condition",
+          "detail": "In a balanced Wheatstone bridge $P/Q = R/(S\\|x)$, where $S\\|x$ is S in parallel with the shunt x."
+        },
+        {
+          "label": "Substitute",
+          "detail": "With P = Q = R = 3 $\\Omega$ and S = 4 $\\Omega$: $3/3 = 3/(4\\|x)$, so $4\\|x = 3\\ \\Omega$."
+        },
+        {
+          "label": "Solve for x",
+          "detail": "$4x/(4 + x) = 3 \\Rightarrow 4x = 12 + 3x \\Rightarrow x = 12\\ \\Omega$."
+        }
+      ],
+      "why": "Balance requires the fourth arm to equal 3 Ω; shunting the 4 Ω wire with x must give 4x/(4+x) = 3, which solves to x = 12 Ω.",
+      "tags": [
+        "wheatstone bridge",
+        "balanced bridge",
+        "shunt resistance",
+        "parallel resistance",
+        "current electricity"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q17",
+      "code": "Q17",
+      "number": 17,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "Magnetic moment of a thin bar magnet is 'M'. If it is bent into a semicircular form, its new magnetic moment will be ______.",
+      "options": [
+        "$M/\\pi$",
+        "$M/2$",
+        "$M$",
+        "$2M/\\pi$"
+      ],
+      "answer": "(d) $2M/\\pi$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Original moment",
+          "detail": "$M = m \\times l$, the product of pole strength m and length l."
+        },
+        {
+          "label": "Bend into semicircle",
+          "detail": "The length becomes the semicircular arc: $l = \\pi r$, so $M = m\\pi r$; the new pole separation is the diameter $2r$ (original length $l = \\pi r$, so $2r = 2l/\\pi$)."
+        },
+        {
+          "label": "New moment",
+          "detail": "$M' = m \\times 2r = \\dfrac{2}{\\pi}M$."
+        }
+      ],
+      "why": "Bending shortens the effective pole-to-pole distance from the arc length πr to the diameter 2r, scaling the moment by 2/π: M′ = 2M/π.",
+      "tags": [
+        "magnetic moment",
+        "bar magnet",
+        "semicircular magnet",
+        "pole strength",
+        "magnetism"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q18",
+      "code": "Q18",
+      "number": 18,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "Ferromagnetic material used in Transformers must have ______.",
+      "options": [
+        "Low permeability and High Hysteresis loss",
+        "High permeability and Low Hysteresis loss",
+        "High permeability and High Hysteresis loss",
+        "Low permeability and Low Hysteresis loss"
+      ],
+      "answer": "(b) High permeability and Low Hysteresis loss",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Permeability requirement",
+          "detail": "High permeability allows the magnetic flux to pass through easily and ensures efficient operation."
+        },
+        {
+          "label": "Hysteresis requirement",
+          "detail": "Low hysteresis loss minimizes energy losses during the magnetization and demagnetization cycles."
+        }
+      ],
+      "why": "A transformer core should channel flux easily (high permeability) and waste little energy per magnetization cycle (low hysteresis loss).",
+      "tags": [
+        "transformer core",
+        "ferromagnetic material",
+        "permeability",
+        "hysteresis loss",
+        "magnetism"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q19",
+      "code": "Q19",
+      "number": 19,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "A conducting ring of radius r is placed in a varying magnetic field perpendicular to the plane of the ring. If the rate at which the magnetic field varies is x, the electric field intensity at any point of the ring is ______.",
+      "options": [
+        "$rx$",
+        "$rx/2$",
+        "$2rx$",
+        "$4\\pi r/x$"
+      ],
+      "answer": "(b) $rx/2$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Faraday's law",
+          "detail": "$\\varepsilon = -d\\Phi/dt$ with $\\Phi = B\\pi r^2$, so $\\varepsilon = -\\pi r^2 (dB/dt) = -\\pi r^2 x$."
+        },
+        {
+          "label": "Relate emf to E",
+          "detail": "$\\varepsilon = E \\times 2\\pi r$."
+        },
+        {
+          "label": "Solve",
+          "detail": "$E = \\pi r^2 x/2\\pi r = rx/2$."
+        }
+      ],
+      "why": "The induced emf πr²x is distributed around the circumference 2πr, so the induced electric field is E = rx/2.",
+      "tags": [
+        "faraday law",
+        "induced electric field",
+        "electromagnetic induction",
+        "conducting ring",
+        "changing magnetic field"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q20",
+      "code": "Q20",
+      "number": 20,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "A 50 Hz AC current of crest value 1 A flows through the primary of a transformer. If the mutual inductance between the primary and secondary be 0.5 H, the crest voltage induced in the secondary is ______.",
+      "options": [
+        "75 V",
+        "150 V",
+        "100 V",
+        "200 V"
+      ],
+      "answer": "(c) 100 V (per the Answer Key; source anomaly — the paper's own explanation computes ≈157 V and concludes 'the closest option is 150 V', i.e. option (b))",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Induced voltage formula",
+          "detail": "$V_S = M(dI_p/dt)$; for $I_p = I_0\\sin(\\omega t)$ the maximum rate of change is $I_0\\omega$."
+        },
+        {
+          "label": "Substitute",
+          "detail": "$I_0 = 1$ A, $f = 50$ Hz, $\\omega = 100\\pi$ rad/s, so $dI_p/dt = 100\\pi$ A/s."
+        },
+        {
+          "label": "Compute",
+          "detail": "$V_s = 0.5 \\times 100\\pi = 50\\pi \\approx 157$ V; the explanation states the closest option is 150 V, yet the key marks (c) 100 V."
+        }
+      ],
+      "why": "The crest secondary voltage is M·ω·I₀ = 0.5 × 100π × 1 ≈ 157 V; the printed solution rounds to the closest option 150 V, but the printed answer key marks (c) 100 V — an internal inconsistency in the source.",
+      "tags": [
+        "mutual inductance",
+        "transformer",
+        "ac circuit",
+        "induced emf",
+        "crest value",
+        "electromagnetic induction"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q21",
+      "code": "Q21",
+      "number": 21,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "A long solenoid of diameter 0.1 m has $2 \\times 10^4$ turns per meter. At the center of the solenoid, a coil of 100 turns and radius 0.01 m is placed with its axis coinciding with the solenoid axis. The current in the solenoid reduces at a constant rate to 0 A from 4 A in 0.05 s. If the resistance of the coil is $10\\pi^2\\ \\Omega$, then the total charge flowing through the coil during this time is ______.",
+      "options": [
+        "16 $\\mu$C",
+        "32 $\\mu$C",
+        "16$\\pi$ $\\mu$C",
+        "32$\\pi$ $\\mu$C"
+      ],
+      "answer": "(b) 32 $\\mu$C",
+      "difficulty": "Hard",
+      "steps": [
+        {
+          "label": "Flux through the coil",
+          "detail": "$\\Phi = B \\times A = \\mu_0 n I \\pi r^2$ per turn; given $\\mu_0 = 4\\pi \\times 10^{-7}$ Tm/A, $n = 2 \\times 10^4$ /m, $I = 4$ A, $r = 0.01$ m, $N = 100$."
+        },
+        {
+          "label": "Rate of change",
+          "detail": "$dI/dt = (4 - 0)/0.05 = 80$ A/s, so $d\\Phi/dt = \\mu_0 n (dI/dt)\\pi r^2 = 6.4\\pi^2 \\times 10^{-3}$ Wb/s."
+        },
+        {
+          "label": "Induced emf",
+          "detail": "$\\varepsilon = -N(d\\Phi/dt) = -100 \\times 6.4\\pi^2 \\times 10^{-3} = -0.64\\pi^2$ V."
+        },
+        {
+          "label": "Charge",
+          "detail": "$Q = \\varepsilon\\Delta t/R = 0.64\\pi^2 \\times 0.05/(10\\pi^2)$; the explanation evaluates this to 32 $\\mu$C (its intermediate exponent line is misprinted)."
+        }
+      ],
+      "why": "The charge through the coil is Q = NΔΦ/R = N·μ₀n·ΔI·πr²/R = 100 × 4π×10⁻⁷ × 2×10⁴ × 4 × π×10⁻⁴ / (10π²) = 3.2 × 10⁻⁵ C = 32 μC.",
+      "tags": [
+        "solenoid",
+        "electromagnetic induction",
+        "induced charge",
+        "faraday law",
+        "mutual inductance",
+        "coil"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q22",
+      "code": "Q22",
+      "number": 22,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "Lower half of a convex lens is made opaque. Which of the following statements describes the image of the object placed in front of the lens? A. No change in image. B. Image will show only half of the object. C. Intensity of image gets reduced.",
+      "options": [
+        "(A) only",
+        "(B) only",
+        "(C) only",
+        "(B) and (C) only"
+      ],
+      "answer": "(c) (C) only",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Full image still forms",
+          "detail": "When the lower half of a convex lens is made opaque, the lens still forms the complete image of the object."
+        },
+        {
+          "label": "Intensity drops",
+          "detail": "Only half the lens converges light, so the amount of light passing through is reduced — the image intensity decreases, but the full object is still visible."
+        }
+      ],
+      "why": "Every part of a lens forms the whole image, so blocking half the lens only halves the light gathered: the complete image forms with reduced intensity.",
+      "tags": [
+        "convex lens",
+        "image formation",
+        "intensity",
+        "half lens covered",
+        "ray optics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q23",
+      "code": "Q23",
+      "number": 23,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "Two slits are made 0.1 mm apart and the screen is placed 2 m away. The fringe separation when a light of wavelength 500 nm is used is ______.",
+      "options": [
+        "1 cm",
+        "0.15 cm",
+        "1.5 cm",
+        "0.1 cm"
+      ],
+      "answer": "(a) 1 cm",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Fringe-width formula",
+          "detail": "$\\beta = \\lambda D/d$ with $\\lambda = 500 \\times 10^{-9}$ m, $D = 2$ m, $d = 0.1 \\times 10^{-3}$ m."
+        },
+        {
+          "label": "Substitute and evaluate",
+          "detail": "$\\beta = (500 \\times 10^{-9} \\times 2)/(0.1 \\times 10^{-3}) = 10^{-2}$ m $= 1$ cm."
+        }
+      ],
+      "why": "Young's double-slit fringe width β = λD/d = (500 nm × 2 m)/(0.1 mm) = 10 mm = 1 cm.",
+      "tags": [
+        "young double slit",
+        "fringe width",
+        "interference",
+        "wave optics",
+        "wavelength"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q24",
+      "code": "Q24",
+      "number": 24,
+      "pdfPage": 3,
+      "marks": 5,
+      "prompt": "For an astronomical telescope having an objective lens of focal length 10 m and an eyepiece lens of focal length 10 cm, the telescope's tube length and magnification respectively are ______.",
+      "options": [
+        "20 cm, 1",
+        "1000 cm, 1",
+        "1010 cm, 1",
+        "1010 cm, 100"
+      ],
+      "answer": "(d) 1010 cm, 100",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Tube length",
+          "detail": "$L = f_o + f_e = 1000 + 10 = 1010$ cm."
+        },
+        {
+          "label": "Magnification",
+          "detail": "$M = f_o/f_e = 1000/10 = 100$."
+        }
+      ],
+      "why": "In normal adjustment the tube length is fo + fe = 1010 cm and the magnification is fo/fe = 100.",
+      "tags": [
+        "astronomical telescope",
+        "magnification",
+        "tube length",
+        "focal length",
+        "optical instruments",
+        "ray optics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q25",
+      "code": "Q25",
+      "number": 25,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "According to Bohr's Model: A. The radius of the orbiting electron is directly proportional to 'n'. B. The speed of the orbiting electron is directly proportional to '1/n'. C. The magnitude of the total energy of the orbiting electron is directly proportional to '$1/n^2$'. D. The radius of the orbiting electron is directly proportional to '$n^2$'.",
+      "options": [
+        "(A), (B) and (C) only",
+        "(A), (B) and (D) only",
+        "(A), (B), (C) and (D)",
+        "(B), (C) and (D) only"
+      ],
+      "answer": "(d) (B), (C) and (D) only",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Radius",
+          "detail": "$r \\propto n^2$, so statement (D) is correct and (A) — radius proportional to n — is incorrect."
+        },
+        {
+          "label": "Speed and energy",
+          "detail": "$v \\propto 1/n$ (statement B correct) and $|E| \\propto 1/n^2$ (statement C correct)."
+        },
+        {
+          "label": "Conclude",
+          "detail": "Correct statements: (B), (C) and (D)."
+        }
+      ],
+      "why": "Bohr's model gives r ∝ n², v ∝ 1/n and |E| ∝ 1/n², so B, C and D hold while A (r ∝ n) is false.",
+      "tags": [
+        "bohr model",
+        "orbit radius",
+        "electron speed",
+        "energy levels",
+        "hydrogen atom",
+        "atomic physics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q26",
+      "code": "Q26",
+      "number": 26,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "For a full wave rectifier, if the input frequency is 50 Hz, the output frequency will be ______.",
+      "options": [
+        "50 Hz",
+        "100 Hz",
+        "25 Hz",
+        "0 Hz"
+      ],
+      "answer": "(b) 100 Hz",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Full-wave action",
+          "detail": "A full wave rectifier inverts every half cycle of the input AC signal, thereby doubling the frequency of the output signal."
+        },
+        {
+          "label": "Compute",
+          "detail": "Output frequency $= 2 \\times 50$ Hz $= 100$ Hz."
+        }
+      ],
+      "why": "A full-wave rectifier flips the negative half-cycles, producing two output humps per input cycle — the ripple frequency doubles to 100 Hz.",
+      "tags": [
+        "full wave rectifier",
+        "output frequency",
+        "rectification",
+        "semiconductor electronics",
+        "ac signal"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q27",
+      "code": "Q27",
+      "number": 27,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "For an electric dipole in a non-uniform electric field with dipole moment parallel to direction of the field, the force (F) and torque ($\\tau$) on the dipole respectively are ______.",
+      "options": [
+        "$F = 0$, $\\tau = 0$",
+        "$F \\neq 0$, $\\tau = 0$",
+        "$F = 0$, $\\tau \\neq 0$",
+        "$F \\neq 0$, $\\tau \\neq 0$"
+      ],
+      "answer": "(b) $F \\neq 0$, $\\tau = 0$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Force in non-uniform field",
+          "detail": "The force on the dipole is non-zero ($F \\neq 0$) because the field is non-uniform, causing a net force on the dipole."
+        },
+        {
+          "label": "Torque when aligned",
+          "detail": "The torque is zero ($\\tau = 0$) because the dipole is aligned with the field and there is no tendency to rotate."
+        }
+      ],
+      "why": "A field gradient pulls the two charges unequally (net force), but with p parallel to E the torque p × E vanishes.",
+      "tags": [
+        "electric dipole",
+        "non-uniform field",
+        "force on dipole",
+        "torque on dipole",
+        "electrostatics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q28",
+      "code": "Q28",
+      "number": 28,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "Two large plane parallel sheets shown in the figure have equal but opposite surface charge densities $+\\sigma$ and $-\\sigma$. A point charge q placed at points P1, P2, and P3 experiences forces F1, F2, and F3 respectively. Then:",
+      "options": [
+        "$F_1 = 0$, $F_2 = 0$, $F_3 = 0$",
+        "$F_1 = 0$, $F_2 \\neq 0$, $F_3 = 0$",
+        "$F_1 \\neq 0$, $F_2 \\neq 0$, $F_3 \\neq 0$",
+        "$F_1 = 0$, $F_3 \\neq 0$, $F_2 = 0$"
+      ],
+      "answer": "(b) $F_1 = 0$, $F_2 \\neq 0$, $F_3 = 0$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Outside the sheets",
+          "detail": "At $P_1$ (and likewise $P_3$) the fields of the two oppositely charged sheets cancel, so the point charge experiences no force: $F_1 = 0$, $F_3 = 0$."
+        },
+        {
+          "label": "Between the sheets",
+          "detail": "At $P_2$ the fields due to both sheets are in the same direction and do not cancel, so $F_2 \\neq 0$."
+        }
+      ],
+      "why": "For a pair of equal-and-opposite charged sheets the field is confined to the gap (σ/ε₀ between, zero outside), so only the charge at P2 feels a force.",
+      "tags": [
+        "parallel charged sheets",
+        "surface charge density",
+        "electric field",
+        "superposition",
+        "electrostatics",
+        "capacitor field"
+      ],
+      "figure": "Two vertical parallel sheets: left sheet +σ (plus signs), right sheet −σ (minus signs). Point charge q shown at P1 outside to the left of the positive sheet, P2 in the gap between the sheets, and P3 outside to the right of the negative sheet.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q28.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q29",
+      "code": "Q29",
+      "number": 29,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "Two charged metallic spheres with radii $R_1$ and $R_2$ are brought in contact and then separated. The ratio of final charges $Q_1$ and $Q_2$ on the two spheres respectively will be ______.",
+      "options": [
+        "$Q_1/Q_2 = R_2/R_1$",
+        "$Q_1/Q_2 < R_1/R_2$",
+        "$Q_1/Q_2 > R_1/R_2$",
+        "$Q_1/Q_2 = R_1/R_2$"
+      ],
+      "answer": "(d) $Q_1/Q_2 = R_1/R_2$",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Contact equalizes potential",
+          "detail": "In contact the spheres share charge until they reach the same potential; $V = Q/R$ for a sphere."
+        },
+        {
+          "label": "Equate potentials",
+          "detail": "$V_1 = V_2 \\Rightarrow Q_1/R_1 = Q_2/R_2$, hence $Q_1/Q_2 = R_1/R_2$."
+        }
+      ],
+      "why": "Touching conductors reach a common potential Q/R, so the final charges divide in proportion to the radii.",
+      "tags": [
+        "charged spheres",
+        "charge sharing",
+        "common potential",
+        "capacitance of sphere",
+        "electrostatics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q30",
+      "code": "Q30",
+      "number": 30,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "Two charged particles, placed at a distance d apart in vacuum, exert a force F on each other. Now, each of the charges is doubled. To keep the force unchanged, the distance between the charges should be changed to ______.",
+      "options": [
+        "4d",
+        "2d",
+        "d",
+        "d/2"
+      ],
+      "answer": "(b) 2d",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Coulomb's law",
+          "detail": "$F = k q_1 q_2/d^2$; doubling each charge gives $F' = k(4q_1q_2)/d'^2$."
+        },
+        {
+          "label": "Keep force unchanged",
+          "detail": "$k(4q_1q_2)/d'^2 = k(q_1q_2)/d^2 \\Rightarrow d'^2 = 4d^2 \\Rightarrow d' = 2d$."
+        }
+      ],
+      "why": "Doubling both charges multiplies the numerator of Coulomb's law by 4, so the separation must double (d² → 4d²) to keep F the same.",
+      "tags": [
+        "coulombs law",
+        "point charges",
+        "inverse square law",
+        "electrostatic force",
+        "electrostatics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q31",
+      "code": "Q31",
+      "number": 31,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "Two parallel plate capacitors of capacitances 2 $\\mu$F and 3 $\\mu$F are joined in series and the combination is connected to a battery of V volts. The values of potential across the two capacitors $V_1$ and $V_2$ and energy stored in the two capacitors $U_1$ and $U_2$ respectively are related as ______.",
+      "options": [
+        "$V_1/V_2 = U_1/U_2 = 3/2$",
+        "$V_1/V_2 = 2/3$ and $U_1/U_2 = 3/2$",
+        "$V_1/V_2 = 3/2$ and $U_1/U_2 = 2/3$",
+        "$V_1/V_2 = 2/3$ and $U_1/U_2 = 2/3$"
+      ],
+      "answer": "(a) $V_1/V_2 = U_1/U_2 = 3/2$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Series → same charge",
+          "detail": "In series the charge Q on each capacitor is the same; $V_1 = Q/C_1 = Q/2$, $V_2 = Q/C_2 = Q/3$, so $V_1/V_2 = 3/2$."
+        },
+        {
+          "label": "Energy ratio",
+          "detail": "$U = Q^2/2C$, so $U_1 = Q^2/4$, $U_2 = Q^2/6$ and $U_1/U_2 = 6/4 = 3/2$."
+        }
+      ],
+      "why": "With equal series charge, both voltage and energy scale as 1/C, so V₁/V₂ = U₁/U₂ = C₂/C₁ = 3/2.",
+      "tags": [
+        "capacitors in series",
+        "energy stored",
+        "potential difference",
+        "capacitance",
+        "electrostatics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q32",
+      "code": "Q32",
+      "number": 32,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "Two resistances of 100 $\\Omega$ and 200 $\\Omega$ are connected in series across a 20 V battery as shown in the figure below. The reading in a 200 $\\Omega$ voltmeter connected across the 200 $\\Omega$ resistance is ______.",
+      "options": [
+        "4 V",
+        "20/3 V",
+        "10 V",
+        "16 V"
+      ],
+      "answer": "(c) 10 V",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Voltmeter loads the circuit",
+          "detail": "The 200 $\\Omega$ voltmeter in parallel with the 200 $\\Omega$ resistor gives an effective $R_2 = 100\\ \\Omega$."
+        },
+        {
+          "label": "Total resistance and current",
+          "detail": "$R_{total} = 100 + 100 = 200\\ \\Omega$; $I = 20/200 = 1/10$ A."
+        },
+        {
+          "label": "Voltmeter reading",
+          "detail": "$V = I \\times 100\\ \\Omega = 10$ V (printed as $V_{200} = 1/10\\ \\text{A} \\times 200\\ \\Omega$ across the combination position)."
+        }
+      ],
+      "why": "The non-ideal voltmeter halves the 200 Ω branch to 100 Ω; the 20 V then divides equally between two 100 Ω sections, so the meter reads 10 V.",
+      "tags": [
+        "voltmeter loading",
+        "series circuit",
+        "parallel resistance",
+        "ohms law",
+        "current electricity",
+        "measurement error"
+      ],
+      "figure": "Series circuit: 20 V battery at the bottom drives 100 Ω and 200 Ω resistors in series; a voltmeter V of internal resistance 200 Ω (+ and − terminals marked) is connected across the 200 Ω resistor.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q32.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q33",
+      "code": "Q33",
+      "number": 33,
+      "pdfPage": 4,
+      "marks": 5,
+      "prompt": "The current through a 4/3 $\\Omega$ external resistance connected to a parallel combination of two cells of 2 V and 1 V emf and internal resistances of 1 $\\Omega$ and 2 $\\Omega$ respectively is ______.",
+      "options": [
+        "1 A",
+        "2/3 A",
+        "8/9 A",
+        "5/6 A"
+      ],
+      "answer": "(d) 5/6 A",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Equivalent emf",
+          "detail": "$E_{eq} = (E_1/r_1 + E_2/r_2)/(1/r_1 + 1/r_2) = (2/1 + 1/2)/(1/1 + 1/2) = 2.5/1.5 = 5/3$ V."
+        },
+        {
+          "label": "Equivalent internal resistance",
+          "detail": "$1/r_{eq} = 1/1 + 1/2 = 1.5$, so $r_{eq} = 2/3\\ \\Omega$."
+        },
+        {
+          "label": "Current",
+          "detail": "$R_{total} = 2/3 + 4/3 = 2\\ \\Omega$; $I = E_{eq}/R_{total} = (5/3)/2 = 5/6$ A."
+        }
+      ],
+      "why": "The parallel cells reduce to Eeq = 5/3 V with req = 2/3 Ω; adding the 4/3 Ω load gives 2 Ω total, so I = (5/3)/2 = 5/6 A.",
+      "tags": [
+        "cells in parallel",
+        "equivalent emf",
+        "internal resistance",
+        "ohms law",
+        "current electricity"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q34",
+      "code": "Q34",
+      "number": 34,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "A metallic wire of uniform area of cross-section has a resistance R, resistivity $\\rho$, and power rating P at V volts. The wire is uniformly stretched to reduce the radius to half the original radius. The values of resistance, resistivity, and power rating at V volts are now denoted by R', $\\rho$', and P' respectively. The corresponding values are correctly related as ______.",
+      "options": [
+        "$\\rho' = 2\\rho$, $R' = 2R$, $P' = 2P$",
+        "$\\rho' = (1/2)\\rho$, $R' = (1/2)R$, $P' = (1/2)P$",
+        "$\\rho' = \\rho$, $R' = 16R$, $P' = (1/16)P$",
+        "$\\rho' = \\rho$, $R' = (1/16)R$, $P' = 16P$"
+      ],
+      "answer": "(c) $\\rho' = \\rho$, $R' = 16R$, $P' = (1/16)P$",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Geometry after stretching",
+          "detail": "Radius halved → $A' = \\pi(r/2)^2 = A/4$; constant volume → $L' = 4L$."
+        },
+        {
+          "label": "New resistance",
+          "detail": "$R' = \\rho L'/A' = \\rho(4L)/(A/4) = 16\\rho L/A = 16R$; resistivity is a material property, $\\rho' = \\rho$."
+        },
+        {
+          "label": "New power rating",
+          "detail": "$P' = V^2/R' = V^2/(16R) = (1/16)P$."
+        }
+      ],
+      "why": "Halving the radius quarters the area and (at constant volume) quadruples the length, so R grows 16×; resistivity is unchanged and at the same voltage P = V²/R falls to P/16.",
+      "tags": [
+        "resistivity",
+        "wire stretching",
+        "resistance",
+        "power rating",
+        "current electricity",
+        "constant volume"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q35",
+      "code": "Q35",
+      "number": 35,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "Three magnetic materials are listed below: A. Paramagnetics, B. Diamagnetics, C. Ferromagnetics. Choose the correct order of the materials in increasing order of magnetic susceptibility.",
+      "options": [
+        "(A), (B), (C)",
+        "(C), (A), (B)",
+        "(B), (A), (C)",
+        "(B), (C), (A)"
+      ],
+      "answer": "(c) (B), (A), (C)",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Susceptibility by class",
+          "detail": "Diamagnetics: very small negative susceptibility (weakly repelled; e.g. bismuth, copper). Paramagnetics: small positive susceptibility (weakly attracted; e.g. aluminum, platinum). Ferromagnetics: very large positive susceptibility (strongly attracted; e.g. iron, nickel, cobalt)."
+        },
+        {
+          "label": "Order",
+          "detail": "Increasing susceptibility: Diamagnetics (B) < Paramagnetics (A) < Ferromagnetics (C)."
+        }
+      ],
+      "why": "Susceptibility runs from slightly negative (diamagnets) through slightly positive (paramagnets) to very large positive (ferromagnets), giving order B, A, C.",
+      "tags": [
+        "magnetic susceptibility",
+        "diamagnetic",
+        "paramagnetic",
+        "ferromagnetic",
+        "magnetism",
+        "magnetic materials"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q36",
+      "code": "Q36",
+      "number": 36,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "Two infinitely long straight parallel conductors carrying currents $I_1$ and $I_2$ are held at a distance d apart in vacuum. The force F on a length L of one of the conductors due to the other is ______.",
+      "options": [
+        "proportional to L but independent of $I_1 \\times I_2$",
+        "proportional to $I_1 \\times I_2$ but independent of length L",
+        "proportional to $I_1 \\times I_2 \\times L$",
+        "proportional to $L / (I_1 \\times I_2)$"
+      ],
+      "answer": "(c) proportional to $I_1 \\times I_2 \\times L$",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Ampère's force law",
+          "detail": "$F/L = (\\mu_0/2\\pi)(I_1 I_2)/d$ between two parallel conductors."
+        },
+        {
+          "label": "Force on length L",
+          "detail": "$F = (\\mu_0/2\\pi)(I_1 I_2 L)/d$ — proportional to both the product of the currents and the length."
+        }
+      ],
+      "why": "The force per unit length between parallel currents is (μ₀/2π)I₁I₂/d, so the force on a stretch L scales with I₁·I₂·L.",
+      "tags": [
+        "parallel conductors",
+        "ampere force law",
+        "magnetic force",
+        "current",
+        "moving charges and magnetism"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q37",
+      "code": "Q37",
+      "number": 37,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "In the circuit shown below, a current 3I enters at A. The semicircular parts ABC and ADC have equal radii 'r' but resistances 2R and R respectively. The magnetic field at the center of the circular loop ABCD is ______.",
+      "options": [
+        "$(\\mu_0 I)/(4r)$ out of the plane",
+        "$(\\mu_0 I)/(4r)$ into the plane",
+        "$(\\mu_0 3I)/(4r)$ out of the plane",
+        "$(\\mu_0 3I)/(4r)$ into the plane"
+      ],
+      "answer": "(a) $(\\mu_0 I)/(4r)$ out of the plane",
+      "difficulty": "Hard",
+      "steps": [
+        {
+          "label": "Current division",
+          "detail": "The 3I current divides inversely with resistance: I through ABC (2R) and 2I through ADC (R)."
+        },
+        {
+          "label": "Field of each semicircle",
+          "detail": "$B_{ABC} = \\frac{1}{2}\\cdot\\frac{\\mu_0 I}{2r} = \\frac{\\mu_0 I}{4r}$; $B_{ADC} = \\frac{1}{2}\\cdot\\frac{\\mu_0 2I}{2r} = \\frac{2\\mu_0 I}{4r}$."
+        },
+        {
+          "label": "Net field",
+          "detail": "The fields oppose: $B_{total} = B_{ADC} - B_{ABC} = \\frac{\\mu_0 I}{4r}$; by the right-hand rule the net field is out of the plane."
+        }
+      ],
+      "why": "The branch currents (I and 2I) create opposing semicircular fields μ₀I/4r and 2μ₀I/4r at the center; the difference μ₀I/4r points out of the plane by the right-hand rule.",
+      "tags": [
+        "magnetic field at center",
+        "semicircular arc",
+        "current division",
+        "biot savart law",
+        "circular loop",
+        "moving charges and magnetism"
+      ],
+      "figure": "Circular loop with A (left), B (top), C (right), D (bottom). Current 3I enters at A from the left and exits at C to the right. Upper semicircle ABC has resistance 2R; lower semicircle ADC has resistance R; both have radius r.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q37.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q38",
+      "code": "Q38",
+      "number": 38,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "A square loop with each side 1 cm, carrying a current of 10 A, is placed in a magnetic field of 0.2 T. The direction of the magnetic field is parallel to the plane of the loop. The torque experienced by the loop is ______.",
+      "options": [
+        "zero",
+        "$2 \\times 10^{-4}$ Nm",
+        "$2 \\times 10^{-2}$ Nm",
+        "2 Nm"
+      ],
+      "answer": "(b) $2 \\times 10^{-4}$ Nm",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Torque formula",
+          "detail": "$\\tau = nIAB\\sin\\theta$ with n = 1, I = 10 A, $A = 1\\ \\text{cm}^2 = 1 \\times 10^{-4}$ m², B = 0.2 T."
+        },
+        {
+          "label": "Angle",
+          "detail": "Field parallel to the loop's plane → angle between the normal and the field is 90°, so $\\sin\\theta = 1$."
+        },
+        {
+          "label": "Evaluate",
+          "detail": "$\\tau = 1 \\times 10 \\times 10^{-4} \\times 0.2 \\times 1 = 2 \\times 10^{-4}$ Nm."
+        }
+      ],
+      "why": "With B in the plane of the loop the torque is maximal: τ = IAB = 10 × 10⁻⁴ × 0.2 = 2 × 10⁻⁴ Nm.",
+      "tags": [
+        "torque on current loop",
+        "magnetic dipole moment",
+        "square loop",
+        "magnetic field",
+        "moving charges and magnetism"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q39",
+      "code": "Q39",
+      "number": 39,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "In an AC circuit, the current leads the voltage by $\\pi/2$. The circuit is ______.",
+      "options": [
+        "purely resistive",
+        "should have circuit elements with resistance equal to reactance",
+        "purely inductive",
+        "purely capacitive"
+      ],
+      "answer": "(d) purely capacitive",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Phase relations",
+          "detail": "Purely resistive: current and voltage in phase. Purely inductive: current lags voltage by $\\pi/2$. Purely capacitive: current leads voltage by $\\pi/2$."
+        },
+        {
+          "label": "Match",
+          "detail": "Since the current leads the voltage by $\\pi/2$, the circuit must be purely capacitive."
+        }
+      ],
+      "why": "A 90° current lead is the signature of a pure capacitor; inductors make current lag and resistors keep it in phase.",
+      "tags": [
+        "ac circuit",
+        "phase difference",
+        "capacitive circuit",
+        "current leads voltage",
+        "alternating current"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q40",
+      "code": "Q40",
+      "number": 40,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "In a pair of adjacent coils, for a change of current in one of the coils from 0 A to 10 A in 0.25 s, the magnetic flux in the adjacent coil changes by 15 Wb. The mutual inductance of the coils is ______.",
+      "options": [
+        "120 H",
+        "12 H",
+        "1.5 H",
+        "0.75 H"
+      ],
+      "answer": "(c) 1.5 H",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Definition",
+          "detail": "$M = \\Delta\\Phi/\\Delta I$ — the ratio of flux change in one coil to the current change causing it."
+        },
+        {
+          "label": "Substitute",
+          "detail": "$M = 15\\ \\text{Wb}/10\\ \\text{A} = 1.5$ H."
+        }
+      ],
+      "why": "Mutual inductance is flux change per unit current change: 15 Wb / 10 A = 1.5 H (the 0.25 s is not needed).",
+      "tags": [
+        "mutual inductance",
+        "magnetic flux",
+        "adjacent coils",
+        "electromagnetic induction",
+        "inductance"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q41",
+      "code": "Q41",
+      "number": 41,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "A wire of irregular shape in figure (a) and a circular loop of wire in figure (b) are placed in different uniform magnetic fields as shown in the figures below. In figure (a), the magnetic field is perpendicular into the plane. In figure (b), the magnetic field is perpendicular out of the plane. The wire in figure (a) is turning into a circular loop and that in figure (b) into a narrow straight wire. The direction of induced current will be ______.",
+      "options": [
+        "clockwise in both (a) and (b)",
+        "anticlockwise in both (a) and (b)",
+        "clockwise in (a) and anticlockwise in (b)",
+        "anticlockwise in (a) and clockwise in (b)"
+      ],
+      "answer": "(b) anticlockwise in both (a) and (b)",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Figure (a)",
+          "detail": "Field into the plane; reshaping the irregular wire into a circle increases the enclosed area, increasing the inward flux. To oppose this increase, the induced current flows anticlockwise (producing a field out of the plane)."
+        },
+        {
+          "label": "Figure (b)",
+          "detail": "Field out of the plane; collapsing the circular loop into a straight wire decreases the enclosed area, decreasing the outward flux. To oppose this decrease, the induced current flows anticlockwise."
+        },
+        {
+          "label": "Source note",
+          "detail": "The printed explanation's final sentence misstates 'clockwise in (a) and anticlockwise in (b)', contradicting its own body; the Answer Key marks (b): anticlockwise in both."
+        }
+      ],
+      "why": "By Lenz's law, (a) opposes growing inward flux with an outward-field (anticlockwise) current, and (b) opposes shrinking outward flux by sustaining it — also anticlockwise.",
+      "tags": [
+        "lenz law",
+        "induced current",
+        "electromagnetic induction",
+        "changing area",
+        "magnetic flux",
+        "loop deformation"
+      ],
+      "figure": "(a) An irregular dashed closed wire loop (points a, b, c, d) in a uniform field into the plane, being reshaped into a circular loop (area increases). (b) A circular loop (points a', b', c', d', with arrows showing it being flattened) in a uniform field out of the plane, being reshaped into a narrow straight wire (area decreases).",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q41-a.png",
+        "figures/q41-b.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q42",
+      "code": "Q42",
+      "number": 42,
+      "pdfPage": 5,
+      "marks": 5,
+      "prompt": "Match List–I has four graphs showing variation of opposition to flow of AC versus frequency with circuit characteristic in List–II. List–II: (I) Impedance, (II) Capacitive reactance, (III) Inductive reactance, (IV) Resistance.",
+      "options": [
+        "(A) – (I), (B) – (III), (C) – (II), (D) – (IV)",
+        "(A) – (IV), (B) – (III), (C) – (II), (D) – (I)",
+        "(A) – (I), (B) – (II), (C) – (IV), (D) – (III)",
+        "(A) – (III), (B) – (IV), (C) – (I), (D) – (II)"
+      ],
+      "answer": "(b) (A) – (IV), (B) – (III), (C) – (II), (D) – (I)",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Constant graph",
+          "detail": "Resistance (IV) remains constant with frequency → the horizontal line, graph (A)."
+        },
+        {
+          "label": "Rising line",
+          "detail": "Inductive reactance (III), $X_L = 2\\pi fL$, increases linearly with frequency → straight line with positive slope, graph (B)."
+        },
+        {
+          "label": "Falling curve",
+          "detail": "Capacitive reactance (II), $X_C = 1/(2\\pi fC)$, decreases hyperbolically with frequency → graph (C)."
+        },
+        {
+          "label": "Dip curve",
+          "detail": "Impedance (I) combines resistance and reactance without a simple linear/hyperbolic form (dips near resonance) → graph (D). (The printed final matching line misprints (B)–(II), (C)–(III); the key gives option (b).)"
+        }
+      ],
+      "why": "Resistance is frequency-independent (flat), inductive reactance grows linearly, capacitive reactance falls as 1/f, and impedance shows the dipped curve — matching (A)-(IV), (B)-(III), (C)-(II), (D)-(I).",
+      "tags": [
+        "reactance",
+        "impedance",
+        "frequency dependence",
+        "ac circuit",
+        "inductive reactance",
+        "capacitive reactance",
+        "matching"
+      ],
+      "figure": "List-I: four graphs of 'Opposition to act' vs frequency. (A) horizontal straight line (constant). (B) straight line rising from the origin. (C) hyperbolic curve decreasing with frequency. (D) curve that first falls then rises (a dip, as in series-resonance impedance).",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q42.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q43",
+      "code": "Q43",
+      "number": 43,
+      "pdfPage": 6,
+      "marks": 5,
+      "prompt": "In an electromagnetic wave, the ratio of energy densities of electric and magnetic fields is ______.",
+      "options": [
+        "$1 : 1$",
+        "$1 : c$",
+        "$c : 1$",
+        "$1 : c^2$"
+      ],
+      "answer": "(a) $1 : 1$",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Stated result",
+          "detail": "The ratio of energy densities of the electric and magnetic fields in an electromagnetic wave is $1 : 1$."
+        },
+        {
+          "label": "Reason",
+          "detail": "The wave carries its energy equally in the electric and magnetic fields ($\\frac{1}{2}\\varepsilon_0 E^2 = \\frac{B^2}{2\\mu_0}$ on average), so neither field dominates."
+        }
+      ],
+      "why": "In an EM wave the average electric and magnetic energy densities are exactly equal, so the ratio is 1 : 1.",
+      "tags": [
+        "electromagnetic wave",
+        "energy density",
+        "electric field",
+        "magnetic field",
+        "em waves"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "generated",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q44",
+      "code": "Q44",
+      "number": 44,
+      "pdfPage": 6,
+      "marks": 5,
+      "prompt": "Of the following, the correct arrangement of electromagnetic spectrum in decreasing order of wavelength is ______.",
+      "options": [
+        "Radio waves, X-rays, Infrared waves, microwaves, visible waves",
+        "Infrared waves, microwaves, Radio waves, X-rays, visible waves",
+        "Radio waves, microwaves, Infrared waves, visible waves, X-rays",
+        "X-rays, visible waves, Infrared waves, microwaves, Radio waves"
+      ],
+      "answer": "(c) Radio waves, microwaves, Infrared waves, visible waves, X-rays",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Recall the spectrum",
+          "detail": "Across the electromagnetic spectrum, wavelength decreases from radio waves through microwaves, infrared and visible light to X-rays."
+        },
+        {
+          "label": "Pick the matching option",
+          "detail": "From the given options, the correct arrangement in decreasing order of wavelength is: Radio waves, microwaves, Infrared waves, visible waves, X-rays."
+        }
+      ],
+      "why": "Wavelength shrinks along the spectrum from radio (longest) through microwaves, infrared and visible light down to X-rays (shortest of the listed).",
+      "tags": [
+        "electromagnetic spectrum",
+        "wavelength order",
+        "radio waves",
+        "microwaves",
+        "x-rays",
+        "em waves"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q45",
+      "code": "Q45",
+      "number": 45,
+      "pdfPage": 6,
+      "marks": 5,
+      "prompt": "Match Electromagnetic waves listed in List–I with Production method/device in List–II. List–I: (A) Microwaves, (B) Infrared, (C) X-rays, (D) Radio waves. List–II: (I) LC oscillator, (II) Magnetron, (III) Vibration of atoms/molecules, (IV) Bombarding large atomic number metal target with moving electrons.",
+      "options": [
+        "(A) – (I), (B) – (II), (C) – (III), (D) – (IV)",
+        "(A) – (II), (B) – (III), (C) – (IV), (D) – (I)",
+        "(A) – (II), (B) – (I), (C) – (IV), (D) – (III)",
+        "(A) – (III), (B) – (IV), (C) – (I), (D) – (II)"
+      ],
+      "answer": "(b) (A) – (II), (B) – (III), (C) – (IV), (D) – (I)",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Microwaves and infrared",
+          "detail": "Microwaves are commonly produced using a magnetron (electrons interacting with a magnetic field); infrared waves are produced by the vibration and rotation of atoms and molecules."
+        },
+        {
+          "label": "X-rays and radio waves",
+          "detail": "X-rays are produced by bombarding a large atomic number metal target with fast-moving electrons; radio waves are commonly generated using an LC (inductor–capacitor) oscillator."
+        }
+      ],
+      "why": "Each wave has a standard production route: magnetron → microwaves, molecular vibration → infrared, electron bombardment of heavy metal targets → X-rays, LC oscillator → radio waves.",
+      "tags": [
+        "electromagnetic waves",
+        "production methods",
+        "magnetron",
+        "lc oscillator",
+        "x-rays",
+        "infrared",
+        "matching"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q45.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q46",
+      "code": "Q46",
+      "number": 46,
+      "pdfPage": 6,
+      "marks": 5,
+      "prompt": "In the figure given below, APB is a curved surface of radius of curvature 10 cm separating air and a transparent material ($\\mu = 4/3$). A point object O is placed in air on the principal axis of the surface 20 cm from P. The distance of the image of O from P will be ______.",
+      "options": [
+        "16 cm left of P in air",
+        "16 cm right of P in water",
+        "20 cm right of P in water",
+        "20 cm left of P in air"
+      ],
+      "answer": "(a) 16 cm left of P in air",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Set up refraction formula",
+          "detail": "$\\dfrac{\\mu_2}{v} - \\dfrac{\\mu_1}{u} = \\dfrac{\\mu_2 - \\mu_1}{R}$ with $\\mu_1 = 1$, $\\mu_2 = 4/3$, $u = -20$ cm, $R = -10$ cm."
+        },
+        {
+          "label": "Substitute",
+          "detail": "$\\dfrac{4/3}{v} - \\dfrac{1}{-20} = \\dfrac{4/3 - 1}{-10}$."
+        },
+        {
+          "label": "Solve",
+          "detail": "$v = -16$ cm; the negative value indicates the image is formed to the left of the surface — 16 cm left of P, in air."
+        }
+      ],
+      "why": "Refraction at the single spherical surface gives v = −16 cm; a negative image distance places the (virtual) image 16 cm to the left of P, on the air side.",
+      "tags": [
+        "refraction at spherical surface",
+        "curved surface",
+        "refractive index",
+        "virtual image",
+        "ray optics"
+      ],
+      "figure": "Curved refracting surface APB (A top, P on the axis, B bottom), convex toward the left, separating air (left) from transparent material of μ = 4/3 (right). Point object O on the principal axis in air, 20 cm to the left of P.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q46.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q47",
+      "code": "Q47",
+      "number": 47,
+      "pdfPage": 6,
+      "marks": 5,
+      "prompt": "For fixed values of radii of curvature of lens, power of the lens will be ______.",
+      "options": [
+        "$P \\propto (\\mu - 1)$",
+        "$P \\propto \\mu^2$",
+        "$P \\propto 1/\\mu$",
+        "$P \\propto \\mu^{-2}$"
+      ],
+      "answer": "(a) $P \\propto (\\mu - 1)$",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Lens maker's formula",
+          "detail": "$P = (\\mu - 1)\\left(\\dfrac{1}{R_1} - \\dfrac{1}{R_2}\\right)$, where $\\mu$ is the refractive index and $R_1$, $R_2$ the radii of curvature."
+        },
+        {
+          "label": "Fixed radii",
+          "detail": "With $R_1$ and $R_2$ fixed, $P \\propto (\\mu - 1)$."
+        }
+      ],
+      "why": "By the lens maker's formula, with the curvature factor fixed the power scales directly with (μ − 1).",
+      "tags": [
+        "lens maker formula",
+        "power of lens",
+        "refractive index",
+        "radii of curvature",
+        "ray optics"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q48",
+      "code": "Q48",
+      "number": 48,
+      "pdfPage": 6,
+      "marks": 5,
+      "prompt": "The graph correctly representing the variation of image distance 'v' for a convex lens of focal length 'f' versus object distance 'u' is ______.",
+      "options": [
+        "Graph (a): hyperbolic branch in the fourth quadrant (positive u, negative v)",
+        "Graph (b): hyperbolic branch in the second quadrant (negative u, positive v)",
+        "Graph (c): straight line with positive slope through the origin",
+        "Graph (d): curve rising from the origin and saturating for positive u"
+      ],
+      "answer": "(b) Graph (b): hyperbolic branch in the second quadrant (negative u, positive v)",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Lens formula",
+          "detail": "$\\dfrac{1}{f} = \\dfrac{1}{v} - \\dfrac{1}{u}$, rearranged to $v = \\dfrac{uf}{u - f}$."
+        },
+        {
+          "label": "Shape and quadrant",
+          "detail": "The graph of this function is a hyperbola; it lies in the 2nd quadrant as u is negative (v positive)."
+        }
+      ],
+      "why": "With the sign convention u < 0 for a real object and v > 0 for a real image, v = uf/(u−f) traces a hyperbola in the second quadrant — graph (b).",
+      "tags": [
+        "lens formula",
+        "convex lens",
+        "image distance",
+        "graph interpretation",
+        "hyperbola",
+        "ray optics"
+      ],
+      "figure": "Four v-u graphs: (a) hyperbolic branch in the fourth quadrant (positive u, negative v) rising toward the u-axis; (b) axes with u increasing to the left — hyperbolic branch in the second quadrant (negative u, positive v) rising steeply near the v-axis; (c) straight line with positive slope through the origin; (d) curve from the origin rising and flattening (saturating) for positive u.",
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated",
+        "figure": "generated",
+        "figureImages": "cropped from source PDF (see figures/crops.json)"
+      },
+      "figureImages": [
+        "figures/q48-a.png",
+        "figures/q48-b.png",
+        "figures/q48-c.png",
+        "figures/q48-d.png"
+      ]
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q49",
+      "code": "Q49",
+      "number": 49,
+      "pdfPage": 7,
+      "marks": 5,
+      "prompt": "Using light from a monochromatic source to study diffraction in a single slit of width 0.1 mm, the linear width of central maxima is measured to be 5 mm on a screen held 50 cm away. The wavelength of light used is ______.",
+      "options": [
+        "$2.5 \\times 10^{-7}$ m",
+        "$4 \\times 10^{-7}$ m",
+        "$5 \\times 10^{-7}$ m",
+        "$7.5 \\times 10^{-7}$ m"
+      ],
+      "answer": "(c) $5 \\times 10^{-7}$ m",
+      "difficulty": "Medium",
+      "steps": [
+        {
+          "label": "Central-maximum width",
+          "detail": "$\\beta = \\dfrac{2\\lambda D}{a}$, so $\\lambda = \\dfrac{\\beta a}{2D}$; given a = 0.1 mm, $\\beta$ = 5 mm, D = 0.5 m."
+        },
+        {
+          "label": "Substitute and evaluate",
+          "detail": "$\\lambda = \\dfrac{(5 \\times 10^{-3})(0.1 \\times 10^{-3})}{2 \\times 0.5} = 5 \\times 10^{-7}$ m."
+        }
+      ],
+      "why": "The single-slit central maximum has width 2λD/a; inverting with the measured 5 mm width gives λ = 5 × 10⁻⁷ m (500 nm).",
+      "tags": [
+        "single slit diffraction",
+        "central maximum",
+        "wavelength",
+        "wave optics",
+        "slit width"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    },
+    {
+      "id": "cuet-physics-2024-05-29-q50",
+      "code": "Q50",
+      "number": 50,
+      "pdfPage": 7,
+      "marks": 5,
+      "prompt": "Radiation of frequency $2\\nu_0$ is incident on a metal with threshold frequency $\\nu_0$. The correct statement of the following is _____.",
+      "options": [
+        "No photoelectrons will be emitted",
+        "All photoelectrons emitted will have kinetic energy equal to $h\\nu_0$",
+        "Maximum kinetic energy of photoelectrons emitted can be $h\\nu_0$",
+        "Maximum kinetic energy of photoelectrons emitted will be $2h\\nu_0$"
+      ],
+      "answer": "(c) Maximum kinetic energy of photoelectrons emitted can be $h\\nu_0$",
+      "difficulty": "Easy",
+      "steps": [
+        {
+          "label": "Photon and threshold energies",
+          "detail": "Incident photon energy $E = h(2\\nu_0)$; threshold energy $E_0 = h\\nu_0$."
+        },
+        {
+          "label": "Einstein's equation",
+          "detail": "The excess energy becomes kinetic energy: $K.E._{max} = h(2\\nu_0) - h\\nu_0 = h\\nu_0$."
+        }
+      ],
+      "why": "By Einstein's photoelectric equation the maximum kinetic energy is hν − hν₀ = h(2ν₀) − hν₀ = hν₀; emitted electrons can have up to (not all exactly) this energy.",
+      "tags": [
+        "photoelectric effect",
+        "threshold frequency",
+        "einstein equation",
+        "maximum kinetic energy",
+        "photon energy",
+        "dual nature"
+      ],
+      "provenance": {
+        "answer": "transcribed",
+        "steps": "transcribed",
+        "why": "generated",
+        "difficulty": "generated",
+        "tags": "generated"
+      }
+    }
+  ],
+  "concept": "NTA CUET (UG) Physics paper of 29 May 2024 — 50 MCQs (attempt 40, 5 marks each, −1 negative) covering modern physics, electrostatics, current electricity, magnetism, electromagnetic induction, AC, EM waves and optics. Answer key and worked explanations are transcribed from the paper itself.",
+  "studyAids": {
+    "provenance": "generated",
+    "mnemonics": [
+      {
+        "phrase": "PE = −2K, TE = −K",
+        "expands": "In any Bohr orbit, if the kinetic energy is K then potential energy is −2K and total energy is −K — the 1 : −2 : −1 ladder.",
+        "note": "Q1 is exactly this."
+      },
+      {
+        "phrase": "Dia < Para ≪ Ferro",
+        "expands": "Magnetic susceptibility order: diamagnetic (small negative) < paramagnetic (small positive) ≪ ferromagnetic (large positive)."
+      },
+      {
+        "phrase": "Full wave = double beat",
+        "expands": "A full-wave rectifier flips every negative half cycle, so the output frequency is twice the input (50 Hz → 100 Hz)."
+      },
+      {
+        "phrase": "Radio Micro Infra Visible X",
+        "expands": "Decreasing wavelength order of EM waves: radio > microwave > infrared > visible > X-rays.",
+        "note": "Q44's exact ordering."
+      }
+    ],
+    "shorthand": [
+      {
+        "term": "λ",
+        "meaning": "Wavelength (m)"
+      },
+      {
+        "term": "μ₀",
+        "meaning": "Permeability of free space, 4π × 10⁻⁷ T·m/A"
+      },
+      {
+        "term": "β",
+        "meaning": "Fringe width in a double-slit pattern, β = λD/d"
+      },
+      {
+        "term": "δ_min",
+        "meaning": "Angle of minimum deviation of a prism"
+      },
+      {
+        "term": "χ",
+        "meaning": "Magnetic susceptibility"
+      }
+    ],
+    "cheatSheet": [
+      {
+        "name": "de Broglie wavelength",
+        "value": "λ = h/√(2meV)"
+      },
+      {
+        "name": "Fringe width (double slit)",
+        "value": "β = λD/d"
+      },
+      {
+        "name": "Force between parallel currents",
+        "value": "F/L = μ₀I₁I₂/(2πd)"
+      },
+      {
+        "name": "Prism (minimum deviation)",
+        "value": "n = sin((A+δ_min)/2) / sin(A/2)"
+      },
+      {
+        "name": "Astronomical telescope",
+        "value": "L = f_o + f_e,  M = f_o/f_e"
+      }
+    ]
+  }
+}
