@@ -1,20 +1,18 @@
 "use client";
 
-import { useState } from "react";
 import type { Question } from "@/lib/types";
-import StepwiseSolution from "./StepwiseSolution";
 
 const OPTION_KEYS = ["A", "B", "C", "D", "E"];
 
 export default function QuestionCard({
   question,
+  onSolve,
   onAsk,
 }: {
   question: Question;
+  onSolve: (q: Question) => void;
   onAsk: (q: Question) => void;
 }) {
-  const [showSolution, setShowSolution] = useState(false);
-
   return (
     <article className="card qcard">
       <div className="qcard__row">
@@ -26,14 +24,20 @@ export default function QuestionCard({
 
       <p className="qcard__prompt">{question.prompt}</p>
 
+      {question.tags.length > 0 && (
+        <ul className="qcard__topics" aria-label="Topics">
+          {question.tags.map((t) => (
+            <li className="topicChip" key={t}>
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
+
       {question.options && (
         <ul className="qcard__options">
           {question.options.map((opt, i) => (
-            <li
-              className="qopt"
-              key={i}
-              data-correct={showSolution && opt === question.answer ? "true" : "false"}
-            >
+            <li className="qopt" key={i} data-correct="false">
               <span className="qopt__key">{OPTION_KEYS[i]}</span>
               {opt}
             </li>
@@ -42,19 +46,13 @@ export default function QuestionCard({
       )}
 
       <div className="qcard__actions">
-        <button
-          className="btn btn--ghost"
-          onClick={() => setShowSolution((v) => !v)}
-          aria-expanded={showSolution}
-        >
-          {showSolution ? "Hide solution" : "Show solution"}
+        <button className="btn btn--solid" onClick={() => onSolve(question)}>
+          Solve step-by-step →
         </button>
         <button className="btn btn--accent" onClick={() => onAsk(question)}>
           Ask why →
         </button>
       </div>
-
-      {showSolution && <StepwiseSolution question={question} />}
     </article>
   );
 }

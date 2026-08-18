@@ -79,12 +79,15 @@ export default function ChatDock({
   onOpenChange,
   seed,
   onSeedConsumed,
+  hidden = false,
 }: {
   pageId: string;
   open: boolean;
   onOpenChange: (open: boolean) => void;
   seed?: string | null;
   onSeedConsumed: () => void;
+  /** Visually hide the collapsed bar (e.g. under a walkthrough) without losing chat state. */
+  hidden?: boolean;
 }) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
@@ -149,7 +152,7 @@ export default function ChatDock({
   return (
     <>
       {open && <div className="scrim" onClick={() => onOpenChange(false)} />}
-      <div className={`dock${open ? " dock--open" : ""}`}>
+      <div className={`dock${open ? " dock--open" : ""}${hidden ? " dock--hidden" : ""}`}>
         {open && (
           <div className="dock__panel" role="dialog" aria-label="Doubt chat for this page">
             <div className="dock__head">
