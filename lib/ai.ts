@@ -124,9 +124,35 @@ export function buildSystemPrompt(page: PageContent): string {
 }
 
 /**
+ * Deterministic scope gate: a fresh doubt with enough content words but zero
+ * overlap with the page's material is off-page — refuse before spending an
+ * LLM call. Conservative on purpose: ongoing conversations and very short
+ * messages ("why?", "aur simple batao") always pass through to the model,
+ * whose prompt guardrail handles the rest.
+ */
+function isPageRelated(page: PageContent, userText: string, history: ChatTurn[]): boolean {
+  if (history.length > 0) return true;
+  const tokens = tokenize(userText);
+  if (tokens.length < 3) return true;
+  const haystack = [
+    page.title,
+    page.concept,
+    page.chapter,
+    ...page.questions.flatMap((q) => [q.prompt, q.answer, ...q.tags, ...q.steps.map((s) => s.detail)]),
+    ...page.mnemonics.map((m) => `${m.phrase} ${m.expands}`),
+    ...page.shorthand.map((s) => `${s.term} ${s.meaning}`),
+    ...page.cheatSheet.map((r) => `${r.name} ${r.value}`),
+  ]
+    .join(" ")
+    .toLowerCase();
+  return tokens.some((t) => haystack.includes(t));
+}
+
+/**
  * Answers a page-scoped doubt. Uses OpenRouter (GPT-5.6 Terra by default,
  * OPENROUTER_MODEL to override) when OPENROUTER_API_KEY is set, otherwise
- * returns the deterministic grounded fallback.
+ * returns the deterministic grounded fallback. Off-page doubts never reach
+ * the model at all.
  */
 export async function answerDoubt(
   page: PageContent,
@@ -134,7 +160,7 @@ export async function answerDoubt(
   history: ChatTurn[] = [],
 ): Promise<{ text: string; source: AnswerSource }> {
   const apiKey = process.env.OPENROUTER_API_KEY?.trim();
-  if (!apiKey) {
+  if (!apiKey || !isPageRelated(page, userText, history)) {
     return { text: groundedFallbackAnswer(page, userText).text, source: "offline" };
   }
 

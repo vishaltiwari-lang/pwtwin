@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Question } from "@/lib/types";
 import MathText from "./MathText";
+import MindMap from "./MindMap";
 import QuestionFigures from "./QuestionFigures";
 
 const OPTION_KEYS = ["A", "B", "C", "D", "E"];
@@ -108,6 +109,7 @@ export default function Walkthrough({
                 Answer: <b><MathText text={question.answer} /></b>
               </p>
               <p className="solution__why read"><MathText text={question.why} /></p>
+              <MindMap question={question} />
             </div>
           )}
         </div>
