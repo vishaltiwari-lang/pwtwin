@@ -15,6 +15,7 @@ const nextConfig = {
   outputFileTracingIncludes: {
     "/api/chat": ["./digital-documents/*/paper.json"],
     "/p/[pageId]": ["./digital-documents/*/paper.json"],
+    "/figures/[pageId]/[file]": ["./digital-documents/*/figures/*.png"],
   },
 };
 

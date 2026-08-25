@@ -64,6 +64,13 @@ test("buildSystemPrompt is the elite mentor prompt", () => {
   assert.match(sys, /NEXT UNSEEN QUESTION/);
 });
 
+test("buildSystemPrompt includes figure descriptions so the tutor knows the diagram", () => {
+  const cuet = getPage("cuet-physics-2024-05-29")!;
+  const sys = buildSystemPrompt(cuet);
+  const pageInput = sys.slice(sys.indexOf("49. CURRENT PAGE INPUT"));
+  assert.match(pageInput, /Figure: Four graphs of photoelectric current/);
+});
+
 test("buildSystemPrompt fills CURRENT PAGE INPUT with real page data", () => {
   const sys = buildSystemPrompt(page);
   const pageInput = sys.slice(sys.indexOf("49. CURRENT PAGE INPUT"));

@@ -15,6 +15,7 @@ function renderPageInput(page: PageContent): string {
       const opts = q.options ? `\nOptions: ${q.options.join(" | ")}` : "";
       return [
         `Question ${q.code}: ${q.prompt}${opts}`,
+        ...(q.figure ? [`Figure: ${q.figure}`] : []),
         `Correct answer: ${q.answer}`,
         `Explanation: ${q.why}`,
         `Solution steps:\n${steps}`,

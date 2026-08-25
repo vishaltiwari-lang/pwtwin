@@ -455,6 +455,30 @@ a { color: inherit; text-decoration: none; }
 .step__label { font-weight: 600; }
 .step__detail { color: var(--ink-80); }
 
+/* Question figure crops */
+.qfigs {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 12px;
+}
+.qfig {
+  margin: 0;
+  flex: 1 1 calc(50% - 4px);
+  min-width: 120px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: #fff;
+  padding: 6px;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.qfigs[data-count="1"] .qfig { flex-basis: 100%; }
+.qfig__img { max-width: 100%; height: auto; display: block; }
+.qfig__cap {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-60);
+}
+
 /* KaTeX math segments */
 .math .katex { font-size: 1.02em; }
 .math--block {

@@ -53,6 +53,20 @@ test("paper question counts match their source papers", () => {
   assert.equal(jkbose?.questions.length, 29);
 });
 
+test("questions with diagrams expose figure description and served image URLs", () => {
+  const cuet = loadPaperPages().find((p) => p.id === "cuet-physics-2024-05-29")!;
+  const q3 = cuet.questions.find((q) => q.code === "Q3")!;
+  assert.ok(q3.figure && q3.figure.length > 0, "Q3 should carry its figure description");
+  assert.deepEqual(q3.figureImages, [
+    "/figures/cuet-physics-2024-05-29/q03-a.png",
+    "/figures/cuet-physics-2024-05-29/q03-b.png",
+    "/figures/cuet-physics-2024-05-29/q03-c.png",
+    "/figures/cuet-physics-2024-05-29/q03-d.png",
+  ]);
+  const q1 = cuet.questions.find((q) => q.code === "Q1")!;
+  assert.equal(q1.figureImages, undefined, "questions without diagrams stay clean");
+});
+
 test("paper pages are served through the content lib (and thus /publisher QRs)", () => {
   assert.equal(getPage("cuet-physics-2024-05-29")?.subject, "Physics");
   assert.equal(getPage("jkbose-12-math-6006b-2022")?.subject, "Math");

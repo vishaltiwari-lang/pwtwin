@@ -2,6 +2,7 @@
 
 import type { Question } from "@/lib/types";
 import MathText from "./MathText";
+import QuestionFigures from "./QuestionFigures";
 
 const OPTION_KEYS = ["A", "B", "C", "D", "E"];
 
@@ -24,6 +25,8 @@ export default function QuestionCard({
       </div>
 
       <p className="qcard__prompt"><MathText text={question.prompt} /></p>
+
+      <QuestionFigures question={question} />
 
       {question.tags.length > 0 && (
         <ul className="qcard__topics" aria-label="Topics">

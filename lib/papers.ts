@@ -22,6 +22,9 @@ interface PaperQuestion {
   steps: Step[];
   why: string;
   tags: string[];
+  figure?: string;
+  /** Paths relative to the paper folder, e.g. "figures/q03-a.png". */
+  figureImages?: string[];
 }
 
 interface PaperJson {
@@ -65,6 +68,11 @@ function toPage(d: PaperJson): PageContent {
     steps: q.steps,
     why: q.why,
     tags: q.tags,
+    figure: q.figure,
+    // "figures/q03-a.png" → the /figures route that serves it.
+    figureImages: q.figureImages?.length
+      ? q.figureImages.map((p) => `/figures/${d.id}/${p.split("/").pop()}`)
+      : undefined,
   }));
   return {
     id: d.id,

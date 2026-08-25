@@ -22,6 +22,10 @@ export interface Question {
   why: string;
   /** Keywords used to match a free-form doubt to this question. */
   tags: string[];
+  /** Text description of the question's diagram, when it has one. */
+  figure?: string;
+  /** Served URLs of the diagram image crops (e.g. /figures/<pageId>/q03-a.png). */
+  figureImages?: string[];
 }
 
 export interface Mnemonic {
